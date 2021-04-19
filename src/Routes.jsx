@@ -11,10 +11,10 @@ class Routes extends Component {
     return (
       <Router>
         <Link to="/main">Main</Link>
-        <Link to="/insideschool">Inside School</Link>
+        {/* <Link to="/insideschool">Inside School</Link>
         <Link to="/outsideschool">Outside School</Link>
         <Link to="/academiccalender">Academic Calender</Link>
-        <Link to="/classevaluation">Class Evaluation</Link>
+        <Link to="/classevaluation">Class Evaluation</Link> */}
         <Switch>
           <Route exact path="/main" component={Main} />
           <Route exact path="/insideschool" component={InSchool} />
