@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import AcademCal from "./pages/academcal/AcademCal";
-import ClassEval from "./pages/classeval/ClassEval";
-import InSchool from "./pages/inschool/InSchool";
-import Main from "./pages/main/Main";
-import OutSchool from "./pages/outschool/OutSchool";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import AcademCal from './pages/academcal/AcademCal';
+import ClassEval from './pages/classeval/ClassEval';
+import InSchool from './pages/inschool/InSchool';
+import Main from './pages/main/Main';
+import OutSchool from './pages/outschool/OutSchool';
 
 class Routes extends Component {
   render() {
