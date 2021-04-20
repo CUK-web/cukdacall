@@ -1,0 +1,55 @@
+body {
+  margin: 0px;
+}
+footer {
+  height: 150px;
+  background-color: blanchedalmond;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  .footerLogo {
+    height: 60px;
+    display: flex;
+    margin-top: 45px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+.footerContents {
+  margin-top: 25px;
+  p {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .footerHeader {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .addressContainer {
+    display: flex;
+    .addressInfo {
+      padding-right: 10px;
+      font-weight: 900;
+    }
+  }
+  .copyright {
+    color: rgb(100, 98, 98);
+    font-weight: inherit;
+  }
+}
+.social {
+  margin-right: 20px;
+  margin-top: 45px;
+  img {
+    margin-right: 20px;
+    height: 50px;
+  }
+}
