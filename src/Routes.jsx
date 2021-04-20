@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import AcademCal from './pages/academcal/AcademCal';
 import ClassEval from './pages/classeval/ClassEval';
 import InSchool from './pages/inschool/InSchool';
+import Nav from '../src/components/nav/Nav';
+import Footer from '../src/components/footer/Footer';
 import Main from './pages/main/Main';
 import OutSchool from './pages/outschool/OutSchool';
 import Footer from './components/footer/Footer';
@@ -12,12 +14,16 @@ class Routes extends Component {
     return (
       <Router>
         {/* <Link to="/main">Main</Link>
+        <Link to="/nav">Nav</Link>
+        <Link to="/footer">footer</Link>
         <Link to="/insideschool">Inside School</Link>
         <Link to="/outsideschool">Outside School</Link>
         <Link to="/academiccalender">Academic Calender</Link>
         <Link to="/classevaluation">Class Evaluation</Link> */}
         <Switch>
           <Route exact path="/main" component={Main} />
+          <Route exact path="/nav" component={Nav} />
+          <Route exact path="/footer" component={Footer} />
           <Route exact path="/insideschool" component={InSchool} />
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/outsideschool" component={OutSchool} />

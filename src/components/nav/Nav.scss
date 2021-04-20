@@ -1,0 +1,30 @@
+nav {
+  height: 180px;
+  top: 0;
+  background-color: rgb(240, 183, 205);
+  border-bottom: 1px black;
+  .navLogoBox {
+    position: relative;
+    text-align: center;
+    .navLogoImg {
+      margin-top: 50px;
+    }
+  }
+  .navTitle {
+    .navList {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      a {
+        text-decoration: none;
+
+        li {
+          font-size: 28px;
+          font-weight: bolder;
+          color: rgb(61, 60, 60);
+          text-shadow: 3px 3px 4px rgb(233, 232, 232);
+        }
+      }
+    }
+  }
+}
