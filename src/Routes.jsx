@@ -7,6 +7,7 @@ import Nav from '../src/components/nav/Nav';
 import Footer from '../src/components/footer/Footer';
 import Main from './pages/main/Main';
 import OutSchool from './pages/outschool/OutSchool';
+import Footer from './components/footer/Footer';
 
 class Routes extends Component {
   render() {
@@ -24,6 +25,7 @@ class Routes extends Component {
           <Route exact path="/nav" component={Nav} />
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/insideschool" component={InSchool} />
+          <Route exact path="/footer" component={Footer} />
           <Route exact path="/outsideschool" component={OutSchool} />
           <Route exact path="/academiccalender" component={AcademCal} />
           <Route exact path="/classevaluation" component={ClassEval} />
