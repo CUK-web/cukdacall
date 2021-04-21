@@ -10,13 +10,13 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <Link to="/main">Main</Link>
-        <Link to="/insideschool">Inside School</Link>
-        <Link to="/outsideschool">Outside School</Link>
-        <Link to="/academiccalender">Academic Calender</Link>
-        <Link to="/classevaluation">Class Evaluation</Link>
+        <Link to="/"></Link>
+        <Link to="/insideschool"></Link>
+        <Link to="/outsideschool"></Link>
+        <Link to="/academiccalender"></Link>
+        <Link to="/classevaluation"></Link>
         <Switch>
-          <Route exact path="/main" component={Main} />
+          <Route exact path="/" component={Main} />
           <Route exact path="/insideschool" component={InSchool} />
           <Route exact path="/outsideschool" component={OutSchool} />
           <Route exact path="/academiccalender" component={AcademCal} />

@@ -1,0 +1,43 @@
+.mainContainer {
+  background-color: powderblue;
+  margin: 0px auto;
+  .teamName {
+    font-size: 100px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .teamIntro {
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+  }
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+    .card {
+      border-color: red;
+      width: 20%;
+      a {
+        .card-img-top {
+        }
+      }
+      .card-body {
+        background-color: cornflowerblue;
+        .card-title {
+          text-align: center;
+        }
+        .card-text {
+        }
+      }
+    }
+  }
+}
