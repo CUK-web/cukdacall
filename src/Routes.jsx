@@ -7,7 +7,6 @@ import Nav from '../src/components/nav/Nav';
 import Footer from '../src/components/footer/Footer';
 import Main from './pages/main/Main';
 import OutSchool from './pages/outschool/OutSchool';
-import Footer from './components/footer/Footer';
 
 class Routes extends Component {
   render() {
@@ -20,6 +19,7 @@ class Routes extends Component {
         <Link to="/outsideschool">Outside School</Link>
         <Link to="/academiccalender">Academic Calender</Link>
         <Link to="/classevaluation">Class Evaluation</Link> */}
+        <Nav />
         <Switch>
           <Route exact path="/main" component={Main} />
           <Route exact path="/nav" component={Nav} />
@@ -30,6 +30,7 @@ class Routes extends Component {
           <Route exact path="/academiccalender" component={AcademCal} />
           <Route exact path="/classevaluation" component={ClassEval} />
         </Switch>
+        <Footer />
       </Router>
     );
   }
