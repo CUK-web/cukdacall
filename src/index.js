@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/Common.scss';
+import './styles/Reset.scss';
+import './index.scss';
 import Routes from './Routes';
 import './styles/reset.scss';
 import './styles/commons.scss';
