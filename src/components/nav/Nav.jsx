@@ -7,11 +7,13 @@ export default class Nav extends Component {
     return (
       <nav>
         <div className="navLogoBox">
-          <img
-            alt="Logo"
-            src="https://www.catholic.ac.kr/front/imgs/common/logo_header_mobile.png"
-            className="navLogoImg"
-          />
+          <Link to="/">
+            <img
+              alt="Logo"
+              src="https://www.catholic.ac.kr/front/imgs/common/logo_header_mobile.png"
+              className="navLogoImg"
+            />
+          </Link>
         </div>
         <div className="navTitle">
           <ul className="navList">
