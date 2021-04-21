@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { Image } from 'react-bootstrap';
+import './InSchool.scss';
 
 class InSchool extends Component {
   render() {
-    return <div>Inschool</div>;
+    return <Image src="/images/cukLogo.jpg" fluid />;
   }
 }
 
