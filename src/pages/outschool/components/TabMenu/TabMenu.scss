@@ -1,0 +1,15 @@
+.tabs {
+  background-color: rgb(242, 250, 207);
+  list-style: none;
+  font-size: 30px;
+  text-align: right;
+  .tabsMenu {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 40px;
+  }
+}
+.outSchoolContainer {
+  display: flex;
+  flex-direction: column;
+}
