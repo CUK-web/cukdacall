@@ -19,9 +19,9 @@ class Routes extends Component {
         <Link to="/outsideschool">Outside School</Link>
         <Link to="/academiccalender">Academic Calender</Link>
         <Link to="/classevaluation">Class Evaluation</Link> */}
-        <Nav />
+        {/* <Nav /> */}
         <Switch>
-          <Route exact path="/main" component={Main} />
+          <Route exact path="/" component={Main} />
           <Route exact path="/nav" component={Nav} />
           <Route exact path="/footer" component={Footer} />
           <Route exact path="/insideschool" component={InSchool} />

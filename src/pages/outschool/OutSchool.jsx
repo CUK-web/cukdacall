@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import Nav from '../../components/nav/Nav';
 
 class OutSchool extends Component {
   render() {
-    return <div>Out</div>;
+    return (
+      <>
+        <Nav />
+        <div>Out</div>
+      </>
+    );
   }
 }
 

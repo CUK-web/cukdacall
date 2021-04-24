@@ -5,7 +5,7 @@ import './Nav.scss';
 export default class Nav extends Component {
   render() {
     return (
-      <nav>
+      <nav className="navContainer">
         <div className="navLogoBox">
           <img
             alt="Logo"
