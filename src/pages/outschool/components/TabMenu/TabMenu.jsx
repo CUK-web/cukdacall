@@ -6,7 +6,7 @@ import Cafe from '../../cafe/Cafe';
 import Etc from '../../etc/Etc';
 import './TabMenu.scss';
 
-export default class componentName extends Component {
+export default class TabMenu extends Component {
   state = {
     currentId: 1,
   };
