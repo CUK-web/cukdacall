@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-// import OutSchoolContainer from '../../../outSchoolContainer/outSchoolContainer';
 import Restaurant from '../../Restaurant/Restaurant';
 import Pub from '../../pub/Pub';
 import Cafe from '../../cafe/Cafe';
 import Etc from '../../etc/Etc';
 import './TabMenu.scss';
 
+const components = [<Restaurant />, <Pub />, <Cafe />, <Etc />];
+const categories = ['식당', '술집', '카페', '기타'];
+
 export default class TabMenu extends Component {
   state = {
-    currentId: 1,
+    currentId: 0,
   };
   clickHandler = id => {
     this.setState({ currentId: id });
@@ -19,7 +21,7 @@ export default class TabMenu extends Component {
     return (
       <>
         <ul className="tabs">
-          {CATEGORY_ARR.map((category, idx) => {
+          {categories.map((category, idx) => {
             return (
               <li
                 key={idx}
@@ -32,7 +34,7 @@ export default class TabMenu extends Component {
           })}
         </ul>
         <section className="outSchoolContainer">
-          {CURRENT_ID[this.state.currentId]}
+          {components[this.state.currentId]}
           {/* <header className="description">
             <Description />
           </header>
@@ -50,12 +52,3 @@ export default class TabMenu extends Component {
     );
   }
 }
-
-const CURRENT_ID = {
-  1: <Restaurant />,
-  2: <Pub />,
-  3: <Cafe />,
-  4: <Etc />,
-};
-
-const CATEGORY_ARR = ['식당', '술집', '카페', '기타'];
