@@ -14,8 +14,6 @@ export default class Restaurant extends Component {
       { id: 4, title: '한솥' },
       { id: 5, title: '한' },
     ],
-    photo: [],
-    text: [],
   };
 
   handleClick = () => {};
