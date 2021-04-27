@@ -19,7 +19,7 @@ export default class Nav extends Component {
               <li className="inSchool">학교내부</li>
             </Link>
             <Link to="/outsideschool">
-              <li className="outSchool">학교외부</li>
+              <li className="outsideSchool">학교외부</li>
             </Link>
             <Link to="/academiccalender">
               <li className="academCal">학사일정</li>

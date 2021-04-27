@@ -4,7 +4,7 @@ import './Footer.scss';
 export default class Footer extends Component {
   render() {
     return (
-      <footer>
+      <footer className="footerContainer">
         <div className="footerLogo">
           <img src="/images/school.png" alt="img" className="teamImg" />
           <img src="/images/school.png" alt="img" className="logoImg" />
