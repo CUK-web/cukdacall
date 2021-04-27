@@ -25,15 +25,24 @@ export default class Restaurant extends Component {
             <Description />
           </header>
           <section className="outSchoolContents">
-            <article className="RestaurantTabsBox">
+            <article className="contentsTabsBox">
               {/* <ContentsTabs /> */}
-              {this.state.tabcontents.map(menu => (
+              {/* {this.state.tabcontents.map(menu => (
                 <ContentsTabs
                   key={menu.id}
                   menu={menu}
                   onClick={() => this.handleClick}
                 />
-              ))}
+              ))} */}
+              <ul className="contentsTabs">
+                {this.state.tabcontents.map(menu => {
+                  return (
+                    <li key={menu.id} menu={menu} className="contentsMenu">
+                      {menu.title}
+                    </li>
+                  );
+                })}
+              </ul>
             </article>
             <article className="contentsBox">
               <PlacePhoto />
