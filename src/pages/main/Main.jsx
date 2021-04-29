@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Main.scss';
 import PageCards from './components/PageCards';
-import { CardDeck } from 'react-bootstrap';
 
 class Main extends Component {
   state = {

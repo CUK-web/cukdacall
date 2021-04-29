@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import EvalTabs from './EvalTabs';
 import SubjInfo from './SubjInfo';
 
 class EvalList extends Component {
@@ -12,7 +11,7 @@ class EvalList extends Component {
         <Button variant="primary" onClick={onClick}>
           {name}, {prof} ({subjnum})
         </Button>
-        {this.props.state.currentId === this.props.id ? (
+        {this.props.state === this.props.id ? (
           <SubjInfo subject={this.props.subject} />
         ) : null}
       </ul>

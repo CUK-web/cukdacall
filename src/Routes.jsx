@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AcademCal from './pages/academcal/AcademCal';
 import ClassEval from './pages/classeval/ClassEval';
 import InSchool from './pages/inschool/InSchool';
@@ -12,14 +12,6 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        {/* <Link to="/main">Main</Link>
-        <Link to="/nav">Nav</Link>
-        <Link to="/footer">footer</Link>
-        <Link to="/insideschool">Inside School</Link>
-        <Link to="/outsideschool">Outside School</Link>
-        <Link to="/academiccalender">Academic Calender</Link>
-        <Link to="/classevaluation">Class Evaluation</Link> */}
-        {/* <Nav /> */}
         <Switch>
           <Route exact path="/" component={Main} />
           <Route exact path="/nav" component={Nav} />
