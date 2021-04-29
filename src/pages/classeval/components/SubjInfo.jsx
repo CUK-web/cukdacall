@@ -18,7 +18,7 @@ class SubjInfo extends Component {
     } = this.props.subject;
 
     return (
-      <div>
+      <div className="subjInfo">
         과목이름: {name}
         <br />
         교수이름: {prof}

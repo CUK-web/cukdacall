@@ -7,14 +7,14 @@ class EvalList extends Component {
     const { name, prof, subjnum } = this.props.subject;
     const { onClick } = this.props;
     return (
-      <ul>
+      <>
         <Button variant="primary" onClick={onClick}>
           {name}, {prof} ({subjnum})
         </Button>
         {this.props.state === this.props.id ? (
           <SubjInfo subject={this.props.subject} />
         ) : null}
-      </ul>
+      </>
     );
   }
 }

@@ -77,22 +77,17 @@ class ClassEval extends Component {
       <>
         <Nav />
         <div className="evalContainer">
-          <div className="evalListContainer">
-            <div className="evalList">
-              <div className="evalListTab">
-                {this.evalElements.map(subject => (
-                  <EvalList
-                    key={subject.id}
-                    subject={subject}
-                    id={subject.id}
-                    state={this.state.currentId}
-                    onClick={() => this.clickHandler(subject.id)}
-                  />
-                ))}
-              </div>
-            </div>
+          <div className="evalListTab">
+            {this.evalElements.map(subject => (
+              <EvalList
+                key={subject.id}
+                subject={subject}
+                id={subject.id}
+                state={this.state.currentId}
+                onClick={() => this.clickHandler(subject.id)}
+              />
+            ))}
           </div>
-          <div className="evalInfoContainer"></div>
         </div>
       </>
     );
