@@ -7,7 +7,6 @@ import InSchool from './pages/inschool/InSchool';
 import Nav from '../src/components/nav/Nav';
 import Footer from '../src/components/footer/Footer';
 import OutSchool from './pages/outschool/OutSchool';
-// import './styles/Common.scss';
 
 class Routes extends Component {
   render() {
