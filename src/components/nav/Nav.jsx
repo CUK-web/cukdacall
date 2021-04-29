@@ -8,7 +8,7 @@ export default class Nav extends Component {
       <nav className="navContainer">
         <div className="navLogoBox">
           <Link to="/">
-            <img alt="Logo" src="/images/캡처.PNG" className="navLogoImg" />
+            <img alt="Logo" src="/images/그림1.png" className="navLogoImg" />
           </Link>
         </div>
         <div className="navTitle">
