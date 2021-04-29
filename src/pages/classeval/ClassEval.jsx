@@ -87,6 +87,7 @@ class ClassEval extends Component {
                     id={subject.id}
                     state={this.state.currentId}
                     onClick={() => this.clickHandler(subject.id)}
+                    // className="test"
                   />
                 ))}
               </div>

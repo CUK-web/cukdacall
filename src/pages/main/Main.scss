@@ -1,5 +1,8 @@
+@import '~bootstrap/scss/bootstrap';
+@import '../../styles/Common.scss';
+
 .mainContainer {
-  background-color: powderblue;
+  // background-color: rgb(255, 255, 255);
   margin: 0px auto;
   .teamName {
     font-size: 100px;
