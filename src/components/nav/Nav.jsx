@@ -8,11 +8,7 @@ export default class Nav extends Component {
       <nav className="navContainer">
         <div className="navLogoBox">
           <Link to="/">
-            <img
-              alt="Logo"
-              src="https://www.catholic.ac.kr/front/imgs/common/logo_header_mobile.png"
-              className="navLogoImg"
-            />
+            <img alt="Logo" src="/images/캡처.PNG" className="navLogoImg" />
           </Link>
         </div>
         <div className="navTitle">

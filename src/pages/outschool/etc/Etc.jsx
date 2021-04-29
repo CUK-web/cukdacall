@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Description from '../components/Description';
-import ContentsTabs from '../components/ContentsTabs';
 import PlacePhoto from '../components/PlacePhoto';
-import PlaceText from '../components/PlaceText';
-import './Etc.scss';
+// import './Etc.scss';
 
 export default class Etc extends Component {
   state = {
@@ -21,7 +18,8 @@ export default class Etc extends Component {
         <div>
           <section className="outSchoolContainer">
             <header className="description">
-              <Description />
+              다큐카피(복사실), 다이소, 그린팜마트, 알파문구 등 기타 물품을 구할
+              수 있는 장소들이 있습니다
             </header>
             <section className="outSchoolContents">
               <article className="contentsTabsBox">
@@ -38,7 +36,6 @@ export default class Etc extends Component {
               </article>
               <article className="contentsBox">
                 <PlacePhoto />
-                <PlaceText />
               </article>
             </section>
           </section>

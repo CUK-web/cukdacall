@@ -3,7 +3,6 @@ import Restaurant from '../../Restaurant/Restaurant';
 import Pub from '../../pub/Pub';
 import Cafe from '../../cafe/Cafe';
 import Etc from '../../etc/Etc';
-import Description from '../Description';
 import './TabMenu.scss';
 
 const components = { 1: <Restaurant />, 2: <Pub />, 3: <Cafe />, 4: <Etc /> };
