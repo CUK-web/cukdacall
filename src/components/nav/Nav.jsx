@@ -5,14 +5,10 @@ import './Nav.scss';
 export default class Nav extends Component {
   render() {
     return (
-      <nav>
+      <nav className="navContainer">
         <div className="navLogoBox">
           <Link to="/">
-            <img
-              alt="Logo"
-              src="https://www.catholic.ac.kr/front/imgs/common/logo_header_mobile.png"
-              className="navLogoImg"
-            />
+            <img alt="Logo" src="/images/캡처.PNG" className="navLogoImg" />
           </Link>
         </div>
         <div className="navTitle">
@@ -21,7 +17,7 @@ export default class Nav extends Component {
               <li className="inSchool">학교내부</li>
             </Link>
             <Link to="/outsideschool">
-              <li className="outSchool">학교외부</li>
+              <li className="outsideSchool">학교외부</li>
             </Link>
             <Link to="/academiccalender">
               <li className="academCal">학사일정</li>

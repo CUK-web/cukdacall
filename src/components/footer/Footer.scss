@@ -1,13 +1,9 @@
-body {
-  margin: 0px;
-}
-footer {
+.footerContainer {
   height: 150px;
   background-color: blanchedalmond;
   display: flex;
   margin: 0 auto;
   justify-content: space-around;
-  position: fixed;
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
