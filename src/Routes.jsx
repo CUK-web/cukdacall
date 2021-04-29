@@ -11,7 +11,6 @@ import OutSchool from './pages/outschool/OutSchool';
 
 class Routes extends Component {
   render() {
-    let HideNav = window.location.pathname === '/' ? null : <Nav />;
     return (
       <Router>
         <Switch>

@@ -1,1 +1,25 @@
 @import '~bootstrap/scss/bootstrap';
+<<<<<<< HEAD
+
+.evalContainer {
+  background-color: powderblue;
+  //   display: table;
+  .evalListTab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    .btn {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .subjInfo {
+      position: absolute;
+      top: 0px;
+      left: 300px;
+      font-size: 20px;
+    }
+  }
+}
+=======
+>>>>>>> 1c4f36d4811a153691b30e3856ba577064f24139
