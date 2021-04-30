@@ -2,6 +2,7 @@
 
 .evalContainer {
   background-color: powderblue;
+  // height: 550px;
   //   display: table;
   .evalListTab {
     display: flex;
@@ -10,13 +11,19 @@
     position: relative;
     .btn {
       font-size: 20px;
-      margin-bottom: 10px;
+      margin: 10px;
     }
     .subjInfo {
       position: absolute;
       top: 0px;
-      left: 300px;
-      font-size: 20px;
+      left: 50%;
+      font-size: 30px;
+      margin-top: 5px;
+      padding-left: 50px;
+      border-left: solid;
+      div {
+        border-bottom: solid;
+      }
     }
   }
 }
