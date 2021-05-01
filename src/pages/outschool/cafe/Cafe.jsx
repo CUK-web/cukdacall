@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Description from '../components/Description';
-import ContentsTabs from '../components/ContentsTabs';
 import PlacePhoto from '../components/PlacePhoto';
 
 export default class Cafe extends Component {
