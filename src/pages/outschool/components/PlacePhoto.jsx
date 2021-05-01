@@ -3,14 +3,15 @@ import React, { Component } from 'react';
 
 export default class PlacePhoto extends Component {
   render() {
-    const { title, imgData, info, id } = this.props.info;
-    const { state } = this.props;
+    const { title, imgData, info } = this.props.info;
+    const { state, idx } = this.props;
+    const imgPath = '/images/RestaurentImg/';
     return (
       <>
-        {id === state ? (
+        {idx === state ? (
           <>
             <div className="contentsTitle">{title}</div>
-            <img src={imgData} alt="사진" className="photo" />
+            <img src={`${imgPath}${imgData}`} alt="사진" className="photo" />
             <div className="PlaceText">{info}</div>
           </>
         ) : null}

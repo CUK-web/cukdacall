@@ -5,45 +5,40 @@ import './Restaurant.scss';
 export default class Restaurant extends Component {
   state = {
     tabContents: [
-      { id: 1, title: '1983pub' },
-      { id: 2, title: '삼복가' },
-      { id: 3, title: '지지고' },
-      { id: 4, title: '학교가는길' },
-      { id: 5, title: '크라이치즈버거' },
+      '1983pub',
+      '삼복가',
+      '지지고',
+      '학교가는길',
+      '크라이치즈버거',
     ],
-    restaurantData: [
+    restaurants: [
       {
-        id: 1,
         title: '1983pub',
-        imgData: '/images/RestaurentImg/1983.jpg',
+        imgData: '1983.jpg',
         info: '설명',
       },
       {
-        id: 2,
         title: '삼복가',
-        imgData: '/images/RestaurentImg/삼복가.jpg',
+        imgData: '삼복가.jpg',
         info: '설명2',
       },
       {
-        id: 3,
         title: '지지GO',
-        imgData: '/images/RestaurentImg/gggo.png',
+        imgData: 'gggo.png',
         info: '설명3',
       },
       {
-        id: 4,
         title: '학교가는길',
-        imgData: '/images/RestaurentImg/schoolfood.png',
+        imgData: 'schoolfood.png',
         info: '설명4',
       },
       {
-        id: 5,
         title: '크라이치즈버거',
-        imgData: '/images/RestaurentImg/burger.png',
+        imgData: 'burger.png',
         info: '설명5',
       },
     ],
-    resCurrentId: 1,
+    resCurrentId: 0,
   };
 
   handleClick = id => {
@@ -78,23 +73,23 @@ export default class Restaurant extends Component {
                 {this.state.tabContents.map((menu, idx) => {
                   return (
                     <li
-                      key={menu.id}
-                      menu={menu}
+                      key={idx}
                       className="contentsMenu"
-                      onClick={() => this.handleClick(idx + 1)}
+                      onClick={() => this.handleClick(idx)}
                     >
-                      {menu.title}
+                      {menu}
                     </li>
                   );
                 })}
               </ul>
             </article>
             <article className="contentsBox">
-              {this.state.restaurantData.map(data => {
+              {this.state.restaurants.map((data, idx) => {
                 return (
                   <PlacePhoto
                     info={data}
-                    key={data.id}
+                    key={idx}
+                    idx={idx}
                     state={this.state.resCurrentId}
                   />
                 );

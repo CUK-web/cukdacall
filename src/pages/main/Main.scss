@@ -2,7 +2,6 @@
 @import '../../styles/Common.scss';
 
 .mainContainer {
-  // background-color: rgb(255, 255, 255);
   margin: 0px auto;
   .teamName {
     font-size: 100px;
@@ -29,16 +28,11 @@
     .card {
       border-color: red;
       width: 20%;
-      a {
-        .card-img-top {
-        }
-      }
+
       .card-body {
         background-color: cornflowerblue;
         .card-title {
           text-align: center;
-        }
-        .card-text {
         }
       }
     }
