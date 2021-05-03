@@ -4,16 +4,15 @@ import { Link } from 'react-router-dom';
 
 class PageElements extends Component {
   render() {
-    const { title, text, img, link } = this.props.elements;
+    const { title, img, link } = this.props.elements;
     return (
       <Card>
-        <Link to={link}>
+        <Link to={link} className="linkto">
           <Card.Img variant="top" src={img} />
+          <Card.Body>
+            <Card.Title>{title}</Card.Title>
+          </Card.Body>
         </Link>
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{text}</Card.Text>
-        </Card.Body>
       </Card>
     );
   }
