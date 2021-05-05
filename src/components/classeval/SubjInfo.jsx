@@ -19,29 +19,29 @@ class SubjInfo extends Component {
 
     return (
       <div className="subjInfo">
-        과목이름: {name}
+        <span>과목이름:</span> {name}
         <br />
-        교수이름: {prof}
+        <span>교수이름:</span> {prof}
         <br />
-        과목번호: {subjnum}
+        <span>과목번호:</span> {subjnum}
         <br />
-        수강학기: {semester}
+        <span>수강학기:</span> {semester}
         <br />
-        교재정보: {book}
+        <span>교재정보:</span> {book}
         <br />
-        과제: {assign}
+        <span>과제:</span> {assign}
         <br />
-        팀플: {teamplay}
+        <span>팀플:</span> {teamplay}
         <br />
-        학점비율: {grade}
+        <span>학점비율:</span> {grade}
         <br />
-        출결: {attendance}
+        <span>출결:</span> {attendance}
         <br />
-        시험횟수: {test}
+        <span>시험횟수:</span> {test}
         <br />
-        총점: {score}
+        <span>총점:</span> {score}
         <br />
-        총평: {review}
+        <span>총평:</span> {review}
       </div>
     );
   }
