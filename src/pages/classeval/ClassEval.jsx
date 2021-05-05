@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from '../../components/nav/Nav';
 import './ClassEval.scss';
-import EvalList from './components/EvalList';
+import EvalList from '../../components/classeval/EvalList';
 
 class ClassEval extends Component {
   evalElements = [
