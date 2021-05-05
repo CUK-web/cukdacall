@@ -205,6 +205,7 @@ class ClassEval extends Component {
 
   clickHandler = id => {
     this.setState({ currentId: id });
+    window.scrollTo({ left: 0, top: 280, behavior: 'smooth' });
   };
 
   render() {
