@@ -1,33 +1,32 @@
 .footerContainer {
-  height: 150px;
-  background-color: blanchedalmond;
+  margin-top: -50px;
+  background: rgba(27, 40, 158, 0.3);
   display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  bottom: 0px;
-  width: 100%;
-  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   .footerLogo {
-    height: 60px;
-    display: flex;
-    margin-top: 45px;
-
     img {
-      width: 100%;
+      // width: 100%;
     }
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
   }
 }
 .footerContents {
-  margin-top: 25px;
+  padding-left: 20px;
   p {
-    margin-top: 3px;
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .footerHeader {
     font-weight: bolder;
-    font-size: 20px;
+    
   }
   .addressContainer {
     display: flex;
@@ -42,10 +41,8 @@
   }
 }
 .social {
-  margin-right: 20px;
-  margin-top: 45px;
+  margin-left: auto;
   img {
-    margin-right: 20px;
     height: 50px;
   }
 }
