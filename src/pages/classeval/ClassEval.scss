@@ -7,23 +7,30 @@
   .evalListTab {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-content: flex-start;
     position: relative;
+    flex-wrap: wrap;
+    max-height: 650px;
+    padding-left: 10px;
+    top: -10px;
     .btn {
       font-size: 20px;
-      margin: 10px;
-      margin-left: 30%;
+      margin: 5px;
     }
     .subjInfo {
       position: absolute;
-      top: 0px;
-      left: 50%;
+      top: -17px;
+      left: 65vw;
       font-size: 30px;
-      margin-top: 5px;
-      padding-left: 5%;
-      border-left: solid;
-      div {
+      padding-top: 17px;
+      padding-bottom: 54.5px;
+      line-height: 180%;
+
+      .lists {
+        font-weight: bold;
+        border-left: 8px solid #3736ff;
         border-bottom: solid;
+        padding-left: 8px;
       }
     }
   }
