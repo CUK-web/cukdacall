@@ -4,12 +4,12 @@ import SubjInfo from './SubjInfo';
 
 class EvalList extends Component {
   render() {
-    const { name, prof, subjnum } = this.props.subject;
+    const { name, prof } = this.props.subject;
     const { onClick } = this.props;
     return (
       <>
         <Button variant="primary" onClick={onClick}>
-          {name}, {prof} ({subjnum})
+          {name} ({prof})
         </Button>
         {this.props.state === this.props.id ? (
           <SubjInfo subject={this.props.subject} />
