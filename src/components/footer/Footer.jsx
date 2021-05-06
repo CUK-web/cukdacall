@@ -6,7 +6,7 @@ export default class Footer extends Component {
     return (
       <footer className="footerContainer">
         <div className="footerLogo">
-          <img src="/images/school.png" alt="img" className="teamImg" />
+          {/* <img src="/images/school.png" alt="img" className="teamImg" /> */}
           <img src="/images/school.png" alt="img" className="logoImg" />
         </div>
         <div className="footerContents">

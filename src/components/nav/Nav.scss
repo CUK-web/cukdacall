@@ -15,19 +15,18 @@
     }
   }
 }
-.navTitle {
   .navList {
-    margin-top: 40px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     list-style: none;
     border-bottom: 3px solid black;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     li {
       align-items: center;
-      font-size: 28px;
+      font-size: 22px;
       font-weight: bolder;
       color: rgb(0, 0, 0);
       // text-shadow: 3px 3px 4px rgb(233, 232, 232);
@@ -35,12 +34,10 @@
     li:hover {
       text-decoration: none;
       color: #3736ff;
-      font-size: 28px;
       font-weight: bolder;
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
     }
     a {
       text-decoration: none;
     }
-  }
 }

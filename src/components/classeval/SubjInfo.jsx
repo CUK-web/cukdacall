@@ -19,29 +19,38 @@ class SubjInfo extends Component {
 
     return (
       <div className="subjInfo">
-        <span>과목이름:</span> {name}
+        <span className="lists">과목이름</span> :{' '}
+        <span className="details">{name}</span>
         <br />
-        <span>교수이름:</span> {prof}
+        <span className="lists">교수이름</span> :{' '}
+        <span className="details">{prof}</span>
         <br />
-        <span>과목번호:</span> {subjnum}
+        <span className="lists">수강학기</span> :{' '}
+        <span className="details">{semester}</span>
         <br />
-        <span>수강학기:</span> {semester}
+        <span className="lists">교재정보</span> :{' '}
+        <span className="details">{book}</span>
         <br />
-        <span>교재정보:</span> {book}
+        <span className="lists">과제</span> :{' '}
+        <span className="details">{assign}</span>
         <br />
-        <span>과제:</span> {assign}
+        <span className="lists">팀플</span> :{' '}
+        <span className="details">{teamplay}</span>
         <br />
-        <span>팀플:</span> {teamplay}
+        <span className="lists">학점비율</span> :{' '}
+        <span className="details">{grade}</span>
         <br />
-        <span>학점비율:</span> {grade}
+        <span className="lists">출결</span> :{' '}
+        <span className="details">{attendance}</span>
         <br />
-        <span>출결:</span> {attendance}
+        <span className="lists">시험횟수</span> :{' '}
+        <span className="details">{test}</span>
         <br />
-        <span>시험횟수:</span> {test}
+        <span className="lists">총점</span> :{' '}
+        <span className="details">{score}</span>
         <br />
-        <span>총점:</span> {score}
-        <br />
-        <span>총평:</span> {review}
+        <span className="lists">총평</span> :{' '}
+        <span className="details">{review}</span>
       </div>
     );
   }
