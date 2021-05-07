@@ -1,37 +1,27 @@
 import React, { Component } from 'react';
-import PlacePhoto from '../components/PlacePhoto';
-// import './Pub.scss';
+import PlacePhoto from '../../../components/outSchool/tabMenu/PlacePhoto';
 
 export default class Pub extends Component {
   state = {
-    tabcontents: [
-      { id: 1, title: '시나브로' },
-      { id: 2, title: '서울포차' },
-      { id: 3, title: '육회지존' },
-      { id: 4, title: 'pub' },
-      { id: 5, title: 'pub' },
-    ],
+    tabcontents: ['시나브로', '서울포차', '육회지존', 'pub', 'pub'],
     pubData: [
       {
-        id: 1,
         title: '시나브로',
-        imgData: '/images/PubImg/pub1.png',
+        imgData: 'pub1.png',
         info: '설명',
       },
       {
-        id: 2,
         title: '서울포차',
-        imgData: '/images/PubImg/pub2.png',
+        imgData: 'pub2.png',
         info: '설명',
       },
       {
-        id: 3,
         title: '육회지존',
-        imgData: '/images/PubImg/pub3.png',
+        imgData: 'pub3.png',
         info: '설명123',
       },
     ],
-    pubCurrentId: 1,
+    pubCurrentId: 0,
   };
 
   handleChange = id => {
@@ -52,23 +42,23 @@ export default class Pub extends Component {
                 {this.state.tabcontents.map((menu, idx) => {
                   return (
                     <li
-                      key={menu.id}
-                      menu={menu}
+                      key={idx}
                       className="contentsMenu"
-                      onClick={() => this.handleChange(idx + 1)}
+                      onClick={() => this.handleChange(idx)}
                     >
-                      {menu.title}
+                      {menu}
                     </li>
                   );
                 })}
               </ul>
             </article>
             <article className="contentsBox">
-              {this.state.pubData.map(data => {
+              {this.state.pubData.map((data, idx) => {
                 return (
                   <PlacePhoto
                     info={data}
-                    key={data.id}
+                    key={idx}
+                    idx={idx}
                     state={this.state.pubCurrentId}
                   />
                 );

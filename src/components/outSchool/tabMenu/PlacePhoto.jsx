@@ -5,7 +5,7 @@ export default class PlacePhoto extends Component {
   render() {
     const { title, imgData, info } = this.props.info;
     const { state, idx } = this.props;
-    const imgPath = '/images/RestaurentImg/';
+    const imgPath = '/images/OutSchool/';
     return (
       <>
         {idx === state ? (

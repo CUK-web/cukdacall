@@ -1,36 +1,27 @@
 import React, { Component } from 'react';
-import PlacePhoto from '../components/PlacePhoto';
+import PlacePhoto from '../tabMenu/PlacePhoto';
 
 export default class Cafe extends Component {
   state = {
-    tabcontents: [
-      { id: 1, title: '오르고' },
-      { id: 2, title: 'NewDay' },
-      { id: 3, title: '상상테라스' },
-      { id: 4, title: '카페' },
-      { id: 5, title: '카페' },
-    ],
+    tabcontents: ['오르고', 'NewDay', '상상테라스', '카페', '카페'],
     cafeData: [
       {
-        id: 1,
         title: '오르고',
-        imgData: '/images/CafeImg/cafe1.png',
+        imgData: 'cafe1.png',
         info: '설명',
       },
       {
-        id: 2,
         title: 'NewDay',
-        imgData: '/images/CafeImg/cafe2.png',
+        imgData: 'cafe2.png',
         info: '설명',
       },
       {
-        id: 3,
         title: '상상테라스',
-        imgData: '/images/CafeImg/cafe3.png',
+        imgData: 'cafe3.png',
         info: '설명',
       },
     ],
-    cafeCurrentId: 1,
+    cafeCurrentId: 0,
   };
 
   handleChange = id => {
@@ -53,23 +44,24 @@ export default class Cafe extends Component {
                   {this.state.tabcontents.map((menu, idx) => {
                     return (
                       <li
-                        key={menu.id}
+                        key={idx}
                         menu={menu}
                         className="contentsMenu"
-                        onClick={() => this.handleChange(idx + 1)}
+                        onClick={() => this.handleChange(idx)}
                       >
-                        {menu.title}
+                        {menu}
                       </li>
                     );
                   })}
                 </ul>
               </article>
               <article className="contentsBox">
-                {this.state.cafeData.map(data => {
+                {this.state.cafeData.map((data, idx) => {
                   return (
                     <PlacePhoto
                       info={data}
-                      key={data.id}
+                      key={idx}
+                      idx={idx}
                       state={this.state.cafeCurrentId}
                     />
                   );
