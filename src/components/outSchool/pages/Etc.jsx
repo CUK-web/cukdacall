@@ -15,7 +15,6 @@ export default class Etc extends Component {
 
   handleChange = id => {
     this.setState({ etcCurrentId: id });
-    console.log('하이');
   };
 
   render() {

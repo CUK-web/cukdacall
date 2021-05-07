@@ -14,7 +14,6 @@ export default class TabMenu extends Component {
 
   clickHandler = id => {
     this.setState({ currentId: id });
-    console.log('화긴');
   };
 
   render() {
