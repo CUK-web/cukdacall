@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PlacePhoto from '../components/PlacePhoto';
-import './Restaurant.scss';
+import PlacePhoto from '../tabMenu/PlacePhoto';
+// import './Restaurant.scss';
 
 export default class Restaurant extends Component {
   state = {
