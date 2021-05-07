@@ -1,13 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
 
 .mainContainer {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-image: url("../../univ.jpg");
+  padding: 40px;
+  background-image: url('../../univ.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 
   .title {
     font-size: 70px;
@@ -18,7 +18,13 @@
     background-color: rgba(122, 111, 111, 0.2);
     color: white;
   }
-  
+
+  @media (max-width: 500px) {
+    .title {
+      font-size: 25px;
+    }
+  }
+
   .teamIntro {
     margin-top: 20px;
     text-align: center;
@@ -29,14 +35,13 @@
     border-width: 1px;
     border-color: none;
     color: white;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
   }
-  
+
   .cardContainer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 50px;
 
     .card {
       border-color: #ff3636;
@@ -52,11 +57,11 @@
         }
 
         .card-body {
-          background-color: rgba(0,0,0,0.7);
+          background-color: rgba(0, 0, 0, 0.7);
           .card-title {
             text-align: center;
             margin: 0;
-            color:white;
+            color: white;
           }
         }
       }

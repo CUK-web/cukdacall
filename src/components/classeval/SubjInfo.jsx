@@ -5,7 +5,6 @@ class SubjInfo extends Component {
     const {
       name,
       prof,
-      subjnum,
       semester,
       book,
       assign,
