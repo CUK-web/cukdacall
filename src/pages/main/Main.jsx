@@ -40,7 +40,7 @@ class Main extends Component {
             CUKDACALL
           </span>
           </div>
-        <div className="contents">
+        <div>
         <div className="cardContainer">
             <PageCards cardElements={this.state.cardElements} />
           </div>

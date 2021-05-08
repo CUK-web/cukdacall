@@ -1,7 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 
+
 .mainContainer {
-  height: 100vh;
+  height: 100%;
   padding: 30px;
   background-image: url('../../univ.jpg');
   background-position: center;
@@ -84,9 +85,59 @@
   }
 }
 
+@media (max-width: 850px) {
 
-@media (max-width: 500px) {
-  .title {
-    font-size: 25px;
+  .mainContainer{
+    .cardContainer{
+      padding: 0 15px;
+      .card{
+        height: 210px;
+      }
+
+      .card-body{
+        padding: 0;
+        .card-title{
+          font-size: 16px;
+        }
+      }
+    }
+
+    .teamIntro{
+      margin: 40px 15px;
+      font-size: 16px;
+    }
   }
+}
+
+@media (max-width: 550px) {
+  .mainContainer{
+    padding: 15px;
+    .title .titleText {
+      font-size: 45px;
+      padding: 10px 10%;
+    }
+
+    .cardContainer{
+      margin-top:20px;
+
+      .card {
+        height: 150px;
+        .linkto{
+          .card-img-top{
+            height: 100px;
+          }
+
+          .card-title{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .teamIntro{
+      margin:20px 15px;
+      font-size: 14px;
+    }
+  }
+
 }
