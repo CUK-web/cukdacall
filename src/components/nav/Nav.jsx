@@ -4,7 +4,7 @@ import './Nav.scss';
 
 export default class Nav extends Component {
   clickHandler = () => {
-    window.scrollTo({ left: 0, top: 158, behavior: 'smooth' });
+    window.scrollTo({ left: 0, top: 0 });
   };
   render() {
     return (
