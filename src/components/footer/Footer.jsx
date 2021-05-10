@@ -5,11 +5,6 @@ export default class Footer extends Component {
   render() {
     return (
       <footer className="footerContainer">
-        <div>
-          {/* <img src="/images/school.png" alt="img" className="teamImg" /> */}
-          <img src="/images/school.png" alt="img" className="logoImg" />
-        </div>
-
         <div className="footerContents">
           <p className="footerTeam"> Team CUK共 打(da)call</p>
           <p className="addressInfo">가톨릭대학교 성심교정</p>
@@ -20,6 +15,13 @@ export default class Footer extends Component {
             Copyright © The Catholic University of Korea All rights reserved.
           </p>
         </div>
+        <div>
+          {/* <img src="/images/school.png" alt="img" className="teamImg" /> */}
+          <a href="https://www.catholic.ac.kr/index.do">
+            <img src="/images/school.png" alt="img" className="logoImg" />
+          </a>
+        </div>
+
         <div className="socials">
           <a
             href="https://www.facebook.com/cuklove"
