@@ -334,7 +334,6 @@ class AcademCal extends Component {
             events={this.myEventsList}
             startAccessor="start"
             endAccessor="end"
-            style={{ height: 850, width: 1500 }}
           />
         </div>
       </>

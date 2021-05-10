@@ -1,8 +1,14 @@
 .calContainer {
-  box-sizing: content-box;
+  // box-sizing: content-box;
   display: flex;
   justify-content: center;
   .rbc-calendar {
     margin: 20px;
+    width: 100%;
+    height: 100vh;
+    .rbc-event-content:hover {
+      white-space: pre-wrap;
+      overflow: visible;
+    }
   }
 }

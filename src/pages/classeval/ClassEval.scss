@@ -1,9 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 
 .evalContainer {
-  // background-color: powderblue;
-  // height: 550px;
-  //   display: table;
   .evalListTab {
     display: flex;
     flex-direction: column;
@@ -13,19 +10,50 @@
     max-height: 600px;
     padding-left: 10px;
     top: -10px;
+    @media (max-width: 850px) {
+      height: 100%;
+    }
+    @media (max-width: 550px) {
+    }
 
     .btn {
       font-size: 15px;
       margin: 5px;
+      width: 150px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      @media (max-width: 850px) {
+        font-size: 13px;
+        margin: 3px;
+        width: 125px;
+      }
+      @media (max-width: 550px) {
+        font-size: 11px;
+        width: 100px;
+      }
     }
+    .btn:hover {
+      white-space: pre-wrap;
+    }
+
     .subjInfo {
       position: absolute;
       top: -17px;
       left: 65%;
-      font-size: 20px;
+      font-size: 25px;
       padding-top: 17px;
       padding-bottom: 54.5px;
       line-height: 180%;
+      @media (max-width: 850px) {
+        font-size: 20px;
+        left: 35%;
+      }
+      @media (max-width: 550px) {
+        font-size: 15px;
+        left: 40%;
+      }
 
       .lists {
         font-weight: bold;
@@ -33,29 +61,6 @@
         border-bottom: solid;
         padding-left: 8px;
       }
-    }
-
-    @media (max-width: 500px) {
-      .subjInfo {
-        font-size: 15px;
-        left: 35%;
-      }
-      .btn {
-        font-size: 10px;
-        margin: 3px;
-      }
-    }
-
-    @media (max-width: 380px) {
-      .subjInfo {
-        font-size: 13px;
-        left: 38%;
-      }
-    }
-  }
-  @media (max-width: 500px) {
-    .evalListTab {
-      max-height: none;
     }
   }
 }
