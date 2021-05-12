@@ -56,26 +56,23 @@
         .contentsTabs {
           list-style: none;
           width: 100%;
-          padding: 10px;
           @media (max-width: 850px) {
-            padding: 7px;
           }
           @media (max-width: 550px) {
-            padding: 4px;
             width: max-content;
           }
 
           .contentsMenu {
             cursor: pointer;
             width: 100%;
-            font-size: 30px;
+            font-size: 25px;
             border: solid#3736ff 5px;
             background-color: rgb(#3736ff, 0.8);
             color: white;
             margin-bottom: 1px;
             padding: 2px;
             @media (max-width: 850px) {
-              font-size: 22.5px;
+              font-size: 20px;
             }
             @media (max-width: 550px) {
               font-size: 15px;
