@@ -3,18 +3,15 @@ import React, { Component } from 'react';
 
 export default class PlacePhoto extends Component {
   render() {
-    const { title, imgData, info } = this.props.info;
-    const { state, idx } = this.props;
+    const { imgData, info, title } = this.props.info;
     const imgPath = '/images/OutSchool/';
     return (
       <>
-        {idx === state ? (
-          <>
-            <div className="contentsTitle">{title}</div>
-            <img src={`${imgPath}${imgData}`} alt="사진" className="photo" />
-            <div className="PlaceText">{info}</div>
-          </>
-        ) : null}
+        <ul className="contentsTabs">
+          <img src={`${imgPath}${imgData}`} alt="사진" className="photo" />
+          <li className="contentsTitle">{title}</li>
+          <div className="PlaceText">{info}</div>
+        </ul>
       </>
     );
   }
