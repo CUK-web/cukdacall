@@ -1,66 +1,100 @@
 @import '~bootstrap/scss/bootstrap';
 
-.evalContainer {
-  .evalListTab {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    position: relative;
-    flex-wrap: wrap;
-    max-height: 600px;
-    padding-left: 10px;
-    top: -10px;
-    @media (max-width: 850px) {
-      height: 100%;
-    }
-    @media (max-width: 550px) {
-    }
-
-    .btn {
-      font-size: 15px;
-      margin: 5px;
-      width: 150px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-
+.totalContainer {
+  height: 100vh;
+  .evalContainer {
+    .evalListTab {
+      display: flex;
+      flex-direction: row;
+      padding: 0 1rem 0 1rem;
+      margin-bottom: 1rem;
+      justify-content: center;
       @media (max-width: 850px) {
-        font-size: 13px;
-        margin: 3px;
-        width: 125px;
       }
       @media (max-width: 550px) {
-        font-size: 11px;
-        width: 100px;
+        padding: 0 0.6rem 0 0.6rem;
+      }
+      .btnContainer {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        height: 70vh;
+
+        @media (max-width: 550px) {
+          height: 66vh;
+        }
+
+        .btn {
+          font-size: 15px;
+          margin-bottom: 10px;
+          margin-right: 10px;
+          width: 150px;
+          overflow-x: clip;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+          @media (max-width: 850px) {
+            font-size: 13px;
+            margin: 3px;
+            width: 125px;
+          }
+          @media (max-width: 550px) {
+            font-size: 11px;
+            width: 100px;
+          }
+        }
+        .btn:hover {
+          white-space: pre-wrap;
+        }
+      }
+      .btnContainer::-webkit-scrollbar {
+        width: auto;
+      }
+      .btnContainer::-webkit-scrollbar-track {
+        background-color: rgb(#3736ff, 0.3);
+        border-radius: 10px;
+      }
+      .btnContainer::-webkit-scrollbar-thumb {
+        background-color: #3736ff;
+        border-radius: 10px;
+        background-clip: padding-box;
+        border: 3px solid transparent;
+      }
+      .subjInfo {
+        font-size: 25px;
+        line-height: 180%;
+        overflow-y: auto;
+        width: 60%;
+        padding: 0 0 0 20px;
+        height: 70vh;
+        @media (max-width: 850px) {
+          font-size: 20px;
+        }
+        @media (max-width: 550px) {
+          height: 68vh;
+          font-size: 15px;
+        }
+
+        .lists {
+          font-weight: bold;
+          border-left: 8px solid #3736ff;
+          border-bottom: solid;
+          padding-left: 8px;
+        }
       }
     }
-    .btn:hover {
-      white-space: pre-wrap;
+    .subjInfo::-webkit-scrollbar {
+      width: auto;
     }
-
-    .subjInfo {
-      position: absolute;
-      top: -17px;
-      left: 65%;
-      font-size: 25px;
-      padding-top: 17px;
-      padding-bottom: 54.5px;
-      line-height: 180%;
-      @media (max-width: 850px) {
-        font-size: 20px;
-        left: 35%;
-      }
-      @media (max-width: 550px) {
-        font-size: 15px;
-        left: 40%;
-      }
-
-      .lists {
-        font-weight: bold;
-        border-left: 8px solid #3736ff;
-        border-bottom: solid;
-        padding-left: 8px;
-      }
+    .subjInfo::-webkit-scrollbar-track {
+      background-color: rgb(#3736ff, 0.3);
+      border-radius: 10px;
+    }
+    .subjInfo::-webkit-scrollbar-thumb {
+      background-color: #3736ff;
+      border-radius: 10px;
+      background-clip: padding-box;
+      border: 3px solid transparent;
     }
   }
 }
