@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 import Nav from '../../components/nav/Nav';
 import './ClassEval.scss';
-import EvalList from '../../components/classeval/EvalList';
+import SubjInfo from '../../components/classeval/SubjInfo';
+import { Button } from 'react-bootstrap';
 
 class ClassEval extends Component {
   evalElements = [
+    {
+      id: 0,
+      name: '',
+      prof: '',
+      semester: '',
+      book: '',
+      assign: '',
+      teamplay: '',
+      grade: '',
+      attendance: '',
+      test: '',
+      score: '',
+      review: '',
+    },
     {
       id: 1,
       name: '경영학원론',
@@ -17,7 +32,8 @@ class ClassEval extends Component {
       attendance: '직접호명',
       test: '두번',
       score: '3',
-      review: '교수님이 귀여우십니다.',
+      review:
+        '교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.교수님이 귀여우십니다.',
     },
     {
       id: 2,
@@ -174,7 +190,91 @@ class ClassEval extends Component {
       review: '교수님이 갑자기 연락이 안됩니다.',
     },
     {
-      id: 13,
+      id: 14,
+      name: '투자론',
+      prof: '공매도',
+      semester: '1학기',
+      book: '기도매매법과 종교 그 사이',
+      assign: '0회',
+      teamplay: '없음',
+      grade: '성적미확인',
+      attendance: '전자출결',
+      test: '없음',
+      score: '4',
+      review: '교수님이 갑자기 연락이 안됩니다.',
+    },
+    {
+      id: 15,
+      name: '투자론',
+      prof: '공매도',
+      semester: '1학기',
+      book: '기도매매법과 종교 그 사이',
+      assign: '0회',
+      teamplay: '없음',
+      grade: '성적미확인',
+      attendance: '전자출결',
+      test: '없음',
+      score: '4',
+      review: '교수님이 갑자기 연락이 안됩니다.',
+    },
+    {
+      id: 16,
+      name: '투자론',
+      prof: '공매도',
+      semester: '1학기',
+      book: '기도매매법과 종교 그 사이',
+      assign: '0회',
+      teamplay: '없음',
+      grade: '성적미확인',
+      attendance: '전자출결',
+      test: '없음',
+      score: '4',
+      review: '교수님이 갑자기 연락이 안됩니다.',
+    },
+    {
+      id: 17,
+      name: '투자론',
+      prof: '공매도',
+      semester: '1학기',
+      book: '기도매매법과 종교 그 사이',
+      assign: '0회',
+      teamplay: '없음',
+      grade: '성적미확인',
+      attendance: '전자출결',
+      test: '없음',
+      score: '4',
+      review: '교수님이 갑자기 연락이 안됩니다.',
+    },
+    {
+      id: 18,
+      name: '투자론',
+      prof: '공매도',
+      semester: '1학기',
+      book: '기도매매법과 종교 그 사이',
+      assign: '0회',
+      teamplay: '없음',
+      grade: '성적미확인',
+      attendance: '전자출결',
+      test: '없음',
+      score: '4',
+      review: '교수님이 갑자기 연락이 안됩니다.',
+    },
+    {
+      id: 19,
+      name: '투자론',
+      prof: '공매도',
+      semester: '1학기',
+      book: '기도매매법과 종교 그 사이',
+      assign: '0회',
+      teamplay: '없음',
+      grade: '성적미확인',
+      attendance: '전자출결',
+      test: '없음',
+      score: '4',
+      review: '교수님이 갑자기 연락이 안됩니다.',
+    },
+    {
+      id: 20,
       name: '투자론',
       prof: '공매도',
       semester: '1학기',
@@ -197,22 +297,31 @@ class ClassEval extends Component {
 
   render() {
     return (
-      <>
+      <div className="totalContainer">
         <Nav />
         <div className="evalContainer">
           <div className="evalListTab">
-            {this.evalElements.map(subject => (
-              <EvalList
-                key={subject.id}
-                subject={subject}
-                id={subject.id}
-                state={this.state.currentId}
-                onClick={() => this.clickHandler(subject.id)}
-              />
-            ))}
+            <div className="btnContainer">
+              {this.evalElements.map(subject =>
+                subject.id !== 0 ? (
+                  <Button
+                    variant="primary"
+                    onClick={() => this.clickHandler(subject.id)}
+                  >
+                    {subject.name} ({subject.prof})
+                  </Button>
+                ) : null
+              )}
+            </div>
+
+            {this.evalElements.map(subject =>
+              this.state.currentId === subject.id ? (
+                <SubjInfo subject={subject} />
+              ) : null
+            )}
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

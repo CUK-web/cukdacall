@@ -1,4 +1,9 @@
-.img-fluid {
-  display: flex;
-  margin: 50px auto;
+.insideTotal {
+  // height: 100vh;
+  .insideImg {
+    .img {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
 }

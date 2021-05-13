@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { Image } from 'react-bootstrap';
 import Nav from '../../components/nav/Nav';
 import './InSchool.scss';
 
 class InSchool extends Component {
   render() {
     return (
-      <>
+      <div className="insideTotal">
         <Nav />
-        <Image src="/images/inschoolimage.png" fluid />
-      </>
+        <div className="insideImg">
+          <img src="/images/inschoolimage.png" alt="사진" className="img" />
+        </div>
+      </div>
     );
   }
 }
