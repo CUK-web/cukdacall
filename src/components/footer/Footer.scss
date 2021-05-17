@@ -10,28 +10,45 @@
     flex-direction: column;
     align-items: flex-start;
   }
+  @media (max-width: 550px) {
+    padding: 10px;
+  }
+  @media (max-width: 350px) {
+    padding: 7px;
+  }
+
   .logoImg {
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
     @media (max-width: 850px) {
       margin: 5px 0 5px 0;
+      width: 70%;
     }
     @media (max-width: 550px) {
       margin: 3px 0 3px 0;
+      width: 60%;
     }
-  }
-}
-
-.socials {
-  img {
-    height: 40px;
-    margin-right: 10px;
+    @media (max-width: 350px) {
+      margin: 3px 0 3px 0;
+    }
   }
 }
 
 .footerContents {
   p {
     margin-bottom: 0;
-    padding-bottom: 5px;
     font-size: 16px;
+
+    @media (max-width: 1000px) {
+      font-size: 13.5px;
+    }
+    @media (max-width: 850px) {
+      font-size: 12px;
+    }
+    @media (max-width: 400px) {
+      font-size: 10.5px;
+    }
   }
   .footerTeam {
     font-weight: bolder;
@@ -45,19 +62,30 @@
   }
 }
 
-@media (max-width: 500px) {
-  .socials {
-    padding-top: 10px;
-    // margin-left: auto;
-    img {
+.toCuk {
+  text-align: center;
+  @media (max-width: 850px) {
+    text-align: start;
+    margin: 3px 0px 2px 0px;
+  }
+}
+
+.socials {
+  img {
+    height: 40px;
+    margin-right: 10px;
+    @media (max-width: 1000px) {
       height: 35px;
       margin-right: 10px;
     }
-  }
-
-  .footerContents {
-    p {
-      font-size: 13px;
+    @media (max-width: 850px) {
+      height: 30px;
+    }
+    @media (max-width: 550px) {
+      height: 25px;
+    }
+    @media (max-width: 350px) {
+      height: 20px;
     }
   }
 }

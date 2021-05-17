@@ -3,12 +3,49 @@
   display: flex;
   justify-content: center;
   .rbc-calendar {
-    margin: 20px;
-    width: 100%;
+    margin-bottom: 15px;
+    width: 90%;
     height: 100vh;
-    .rbc-event-content:hover {
-      white-space: pre-wrap;
-      overflow: visible;
+    font-size: 100%;
+    @media (max-width: 850px) {
+      font-size: 13px;
     }
+    @media (max-width: 650px) {
+      margin-top: 0px;
+    }
+    @media (max-width: 550px) {
+      font-size: 11px;
+    }
+    @media (max-width: 320px) {
+      font-size: 10px;
+    }
+
+    .rbc-toolbar {
+      @media (max-width: 850px) {
+        font-size: 13px;
+      }
+      @media (max-width: 550px) {
+        font-size: 11px;
+      }
+      @media (max-width: 400px) {
+      }
+      @media (max-width: 324px) {
+        font-size: 10px;
+      }
+      .rbc-btn-group {
+        button {
+          @media (max-width: 850px) {
+            padding: 4px 11px 4px 11px;
+          }
+          @media (max-width: 550px) {
+            padding: 2px 5px 2px 5px;
+          }
+        }
+      }
+    }
+  }
+  .rbc-event-content:hover {
+    white-space: pre-wrap;
+    overflow: visible;
   }
 }

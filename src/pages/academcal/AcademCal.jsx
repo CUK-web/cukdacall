@@ -334,6 +334,7 @@ class AcademCal extends Component {
             events={this.myEventsList}
             startAccessor="start"
             endAccessor="end"
+            views={{ month: true, agenda: true }}
           />
         </div>
       </>

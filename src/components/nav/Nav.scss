@@ -4,18 +4,21 @@
   border-bottom: 1px black;
 
   .navLogoBox {
-    background-color: #3736ff;
+    background-color: rgb(#3736ff, 0.9);
     position: relative;
     text-align: center;
-    padding: 10px 0px 0px 0px;
+    padding: 17px 0px 0px 0px;
 
     .navLogoImg {
       width: 500px;
-      font-size: 150px;
-    }
-    @media (max-width: 500px) {
-      .navLogoImg {
+      @media (max-width: 850px) {
+        width: 375px;
+      }
+      @media (max-width: 550px) {
         width: 250px;
+      }
+      @media (max-width: 380px) {
+        width: 200px;
       }
     }
   }
@@ -28,13 +31,38 @@
   border-bottom: 3px solid black;
   padding-top: 24px;
   padding-bottom: 24px;
+  @media (max-width: 850px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  @media (max-width: 550px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media (max-width: 380px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 320px) {
+    margin-bottom: 8px;
+  }
 
   li {
     align-items: center;
     font-size: 22px;
     font-weight: bolder;
     color: rgb(0, 0, 0);
-    // text-shadow: 3px 3px 4px rgb(233, 232, 232);
+    @media (max-width: 850px) {
+      font-size: 19px;
+    }
+    @media (max-width: 550px) {
+      font-size: 15px;
+    }
+    @media (max-width: 380px) {
+      font-size: 13px;
+    }
   }
   li:hover {
     text-decoration: none;
@@ -44,10 +72,5 @@
   }
   a {
     text-decoration: none;
-  }
-  @media (max-width: 500px) {
-    li {
-      font-size: 15px;
-    }
   }
 }
