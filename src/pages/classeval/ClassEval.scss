@@ -7,13 +7,14 @@
     .evalListTab {
       display: flex;
       flex-direction: row;
-      padding: 0 1rem 0 1rem;
+      padding: 0 100px 0 100px;
       margin-bottom: 1rem;
       justify-content: center;
-      @media (max-width: 850px) {
+      @media (max-width: 950px) {
+        padding: 0px 70px 30px 70px;
       }
-      @media (max-width: 550px) {
-        padding: 0 0rem 0 0em;
+      @media (max-width: 650px) {
+        padding: 0px 20px 10px 20px;
       }
       .btnContainer {
         display: flex;
@@ -25,8 +26,8 @@
         width: min-content;
         overflow-y: auto;
         overflow-x: hidden;
-        margin: 0 auto;
-        @media (max-width: 550px) {
+        margin: 0 auto 0 0;
+        @media (max-width: 450px) {
           height: 66vh;
         }
 
@@ -40,13 +41,13 @@
           white-space: nowrap;
           text-overflow: ellipsis;
           padding: 0 10px 0 10px;
-          @media (max-width: 850px) {
+          @media (max-width: 950px) {
             padding: 0 7px 0 7px;
             font-size: 13px;
             margin: 3px;
             width: 125px;
           }
-          @media (max-width: 550px) {
+          @media (max-width: 650px) {
             padding: 0 5px 0 5px;
             font-size: 11px;
             width: 100px;
@@ -65,7 +66,7 @@
         width: auto;
       }
       .btnContainer::-webkit-scrollbar-track {
-        background-color: rgb(#3736ff, 0.3);
+        background-color: rgba(55, 54, 255, 0.3);
         border-radius: 10px;
       }
       .btnContainer::-webkit-scrollbar-thumb {
@@ -76,11 +77,11 @@
       }
 
       .line {
-        border: 5px solid rgb(#3736ff, 0.5);
-        @media (max-width: 850px) {
+        border: 5px solid rgb(black, 0.8);
+        @media (max-width: 950px) {
           border-width: 4px;
         }
-        @media (max-width: 550px) {
+        @media (max-width: 650px) {
           border-width: 3px;
         }
         @media (max-width: 450px) {
@@ -93,12 +94,13 @@
         overflow-y: auto;
         width: 60%;
         height: 70vh;
-        margin: 4px auto;
-        @media (max-width: 850px) {
+        margin: 0 0 0 auto;
+        padding-top: 4px;
+        @media (max-width: 950px) {
           font-size: 20px;
         }
-        @media (max-width: 550px) {
-          height: 68vh;
+        @media (max-width: 650px) {
+          height: 66vh;
           font-size: 15px;
         }
         @media (max-width: 450px) {
@@ -110,11 +112,11 @@
           border-left: 8px solid rgb(#3736ff, 0.9);
           border-bottom: solid;
           padding-left: 8px;
-          @media (max-width: 850px) {
+          @media (max-width: 950px) {
             padding-left: 6px;
             border-left: 6px solid rgb(#3736ff, 0.9);
           }
-          @media (max-width: 550px) {
+          @media (max-width: 650px) {
             padding-left: 4px;
             border-left: 4px solid rgb(#3736ff, 0.9);
           }

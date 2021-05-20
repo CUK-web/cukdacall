@@ -1,33 +1,27 @@
 @import '~bootstrap/scss/bootstrap';
 
 .mainContainer {
-  padding: 30px;
-  background-image: url('../../univ.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  @media (max-width: 550px) {
-    padding: 15px;
-  }
+  position: relative;
+
   .title {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
 
     .titleText {
-      background-color: rgba(122, 111, 111, 0.4);
+      background-color: rgba(122, 111, 111, 0.6);
       font-size: 70px;
       color: white;
-      padding: 10px 60px;
-      @media (max-width: 550px) {
+      padding: 0px 60px 5px 60px;
+      @media (max-width: 650px) {
         font-size: 45px;
-        padding: 10px 10%;
+        padding: 0px 60px 0px 60px;
       }
-      @media (max-width: 350px) {
+      @media (max-width: 450px) {
         font-size: 30px;
-        padding: 5px 5%;
       }
     }
   }
@@ -45,7 +39,7 @@
     }
     .card {
       border: none;
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.5);
       width: 18%;
       height: 210px;
       @media (max-width: 1000px) {
@@ -143,4 +137,15 @@
     color: white;
     padding: 3px 4px;
   }
+}
+.background {
+  position: absolute;
+  background-image: url('../../univ.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }

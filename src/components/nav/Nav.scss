@@ -10,17 +10,17 @@
     text-align: center;
     .test {
       background-color: rgba(5, 3, 116, 0.39);
-      padding: 20px 0px 0px 0px;
+      padding: 10px 0px 0px 0px;
       .navLogoImg {
         width: 500px;
 
-        @media (max-width: 850px) {
+        @media (max-width: 950px) {
           width: 375px;
         }
-        @media (max-width: 550px) {
+        @media (max-width: 650px) {
           width: 250px;
         }
-        @media (max-width: 380px) {
+        @media (max-width: 450px) {
           width: 200px;
         }
       }
@@ -35,15 +35,15 @@
   border-bottom: 3px solid black;
   padding-top: 24px;
   padding-bottom: 24px;
-  @media (max-width: 850px) {
+  @media (max-width: 950px) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  @media (max-width: 550px) {
+  @media (max-width: 650px) {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  @media (max-width: 380px) {
+  @media (max-width: 450px) {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 10px;
@@ -58,13 +58,13 @@
     font-size: 22px;
     font-weight: bolder;
     color: rgb(0, 0, 0);
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
       font-size: 19px;
     }
-    @media (max-width: 550px) {
+    @media (max-width: 650px) {
       font-size: 15px;
     }
-    @media (max-width: 380px) {
+    @media (max-width: 450px) {
       font-size: 13px;
     }
   }
