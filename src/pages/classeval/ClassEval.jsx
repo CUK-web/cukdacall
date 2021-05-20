@@ -22,7 +22,7 @@ class ClassEval extends Component {
     },
     {
       id: 1,
-      name: '경영학원론',
+      name: '경영학원론경영학원론경영학원론경영학원론',
       prof: '코지',
       semester: '1학기',
       book: '옆집 개도 배우는 경영학',
@@ -288,7 +288,7 @@ class ClassEval extends Component {
       review: '교수님이 갑자기 연락이 안됩니다.',
     },
   ];
-  state = { currentId: 0 };
+  state = { currentId: 1 };
 
   clickHandler = id => {
     this.setState({ currentId: id });
@@ -308,12 +308,12 @@ class ClassEval extends Component {
                     variant="primary"
                     onClick={() => this.clickHandler(subject.id)}
                   >
-                    {subject.name} ({subject.prof})
+                    {subject.name} <br />({subject.prof})
                   </Button>
                 ) : null
               )}
             </div>
-
+            <div className="line"></div>
             {this.evalElements.map(subject =>
               this.state.currentId === subject.id ? (
                 <SubjInfo subject={subject} />
