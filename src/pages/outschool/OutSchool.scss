@@ -6,10 +6,10 @@
     padding: 0px 10px 5px 10px;
   }
   .tabs {
-    background-color: rgb(255, 255, 255);
     list-style: none;
     font-size: 25px;
-    text-align: center;
+    text-align: right;
+    margin: 30px 0px 30px 0px;
 
     @media (max-width: 950px) {
       font-size: 20px;
@@ -21,11 +21,17 @@
   .tabs li {
     display: inline-block;
     cursor: pointer;
-    padding: 0 5% 0 5%;
+    padding: 0 4% 0 0%;
   }
   .selected {
-    color: rgb(252, 8, 0);
-    font-size: 30px;
+    color: rgb(223, 24, 17);
+    font-size: 28px;
+    @media (max-width: 950px) {
+      font-size: 23px;
+    }
+    @media (max-width: 650px) {
+      font-size: 18px;
+    }
   }
   .unselected {
     color: rgb(0, 0, 0);
@@ -33,31 +39,30 @@
   .outSchoolContainer {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0, 0, 0, 0.445);
+    border: 1px solid rgba(4, 4, 156, 0.562);
 
     .description {
       max-height: 200px;
       overflow: auto;
-      // background-color: rgb(255, 255, 255);
       font-size: 25px;
-      padding: 10px 20px 10px 20px;
-      margin-bottom: 10px;
-      border: 1px solid rgba(0, 0, 0, 0.24);
+      padding: 40px 20px 40px 20px;
+
       @media (max-width: 950px) {
         max-height: 150px;
         font-size: 20px;
-        padding: 7.5px 15px 7.5px 15px;
+        padding: 20px 15px 20px 15px;
       }
       @media (max-width: 650px) {
         font-size: 15px;
         max-height: 100px;
-        padding: 5px 10px 5px 10px;
+        padding: 15px 10px 15px 10px;
       }
     }
     .outSchoolContents {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
+      margin-top: 40px;
       @media (max-width: 850px) {
         margin-top: 20px;
       }
@@ -94,8 +99,8 @@
         .contentsTitle {
           font-size: 25px;
           width: 100%;
-          // border: solid#3736ff 5px;
-          background-color: rgb(1 0 179 / 80%);
+
+          background-color: rgba(1, 0, 179, 0.8);
           color: white;
           padding: 2px;
           margin: 10px 0 10px 0;
@@ -118,8 +123,8 @@
         .PlaceText {
           font-size: 18px;
           width: 100%;
-          background-color: #e8e7e4;
           text-align: center;
+          border: 1px solid rgb(190, 190, 190);
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;

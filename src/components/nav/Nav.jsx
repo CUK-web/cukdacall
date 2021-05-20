@@ -10,9 +10,11 @@ export default class Nav extends Component {
     return (
       <nav className="navContainer">
         <div className="navLogoBox">
-          <Link to="/">
-            <img alt="Logo" src="/images/그림1.png" className="navLogoImg" />
-          </Link>
+          <div className="test">
+            <Link to="/">
+              <img alt="Logo" src="/images/그림1.png" className="navLogoImg" />
+            </Link>
+          </div>
         </div>
         <div className="navTitle">
           <ul className="navList">
