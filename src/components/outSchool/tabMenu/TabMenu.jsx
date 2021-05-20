@@ -25,7 +25,9 @@ export default class TabMenu extends Component {
               <li
                 key={idx}
                 onClick={() => this.clickHandler(idx + 1)}
-                className="tabsMenu"
+                className={
+                  idx + 1 === this.state.currentId ? 'selected' : 'unselected'
+                }
               >
                 {category}
               </li>

@@ -6,7 +6,7 @@
     padding: 0px 10px 5px 10px;
   }
   .tabs {
-    background-color: rgb(242, 250, 207);
+    background-color: rgb(255, 255, 255);
     list-style: none;
     font-size: 25px;
     text-align: center;
@@ -17,23 +17,32 @@
     @media (max-width: 650px) {
       font-size: 15px;
     }
-    .tabsMenu {
-      display: inline-block;
-      cursor: pointer;
-      padding: 0 5% 0 5%;
-    }
+  }
+  .tabs li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 5% 0 5%;
+  }
+  .selected {
+    color: rgb(252, 8, 0);
+    font-size: 30px;
+  }
+  .unselected {
+    color: rgb(0, 0, 0);
   }
   .outSchoolContainer {
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.445);
 
     .description {
       max-height: 200px;
       overflow: auto;
-      background-color: rgb(255, 230, 230);
+      // background-color: rgb(255, 255, 255);
       font-size: 25px;
       padding: 10px 20px 10px 20px;
       margin-bottom: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.24);
       @media (max-width: 950px) {
         max-height: 150px;
         font-size: 20px;
@@ -73,7 +82,7 @@
         .photo {
           max-height: 300px;
           width: 100%;
-          background-color: darkgreen;
+
           @media (max-width: 950px) {
             max-height: 240px;
           }
@@ -85,8 +94,8 @@
         .contentsTitle {
           font-size: 25px;
           width: 100%;
-          border: solid#3736ff 5px;
-          background-color: rgb(#3736ff, 0.8);
+          // border: solid#3736ff 5px;
+          background-color: rgb(1 0 179 / 80%);
           color: white;
           padding: 2px;
           margin: 10px 0 10px 0;
@@ -107,9 +116,9 @@
         }
 
         .PlaceText {
-          font-size: 25px;
+          font-size: 18px;
           width: 100%;
-          background-color: darkkhaki;
+          background-color: #e8e7e4;
           text-align: center;
           overflow: hidden;
           white-space: nowrap;
@@ -117,10 +126,10 @@
           margin-bottom: 20px;
           padding: 0 10px 0 10px;
           @media (max-width: 950px) {
-            font-size: 20px;
+            font-size: 15px;
           }
           @media (max-width: 650px) {
-            font-size: 15px;
+            font-size: 13px;
           }
         }
         .PlaceText:hover {
