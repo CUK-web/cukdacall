@@ -69,6 +69,7 @@ class Main extends Component {
             응원하겠습니다!
           </div>
         </div>
+        <div className="background"></div>
       </div>
     );
   }

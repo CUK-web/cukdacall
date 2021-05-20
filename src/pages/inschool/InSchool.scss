@@ -1,9 +1,14 @@
 .insideTotal {
-  // height: 100vh;
   .insideImg {
+    padding: 35-16px 100px 30px 100px;
+    @media (max-width: 1000px) {
+      padding: 0px 70px 30px 70px;
+    }
+    @media (max-width: 650px) {
+      padding: 0px 20px 10px 20px;
+    }
     .img {
       width: 100%;
-      margin: 0 0 10px 0;
     }
   }
 }
