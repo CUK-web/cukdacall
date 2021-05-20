@@ -25,7 +25,7 @@
         width: min-content;
         overflow-y: auto;
         overflow-x: hidden;
-
+        margin: 0 auto;
         @media (max-width: 550px) {
           height: 66vh;
         }
@@ -36,24 +36,29 @@
           margin-right: 10px;
           width: 150px;
           overflow-x: hidden;
+          overflow-y: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
-
+          padding: 0 10px 0 10px;
           @media (max-width: 850px) {
+            padding: 0 7px 0 7px;
             font-size: 13px;
             margin: 3px;
             width: 125px;
           }
           @media (max-width: 550px) {
+            padding: 0 5px 0 5px;
             font-size: 11px;
             width: 100px;
           }
           @media (max-width: 450px) {
+            padding: 0 3px 0 3px;
             width: 80px;
           }
         }
         .btn:hover {
-          white-space: pre-wrap;
+          height: auto;
+          white-space: normal;
         }
       }
       .btnContainer::-webkit-scrollbar {
@@ -69,24 +74,34 @@
         background-clip: padding-box;
         border: 3px solid transparent;
       }
+
+      .line {
+        border: 5px solid rgb(#3736ff, 0.5);
+        @media (max-width: 850px) {
+          border-width: 4px;
+        }
+        @media (max-width: 550px) {
+          border-width: 3px;
+        }
+        @media (max-width: 450px) {
+          border-width: 2px;
+        }
+      }
       .subjInfo {
         font-size: 25px;
         line-height: 180%;
         overflow-y: auto;
         width: 60%;
-        padding: 0 0 0 20px;
         height: 70vh;
+        margin: 4px auto;
         @media (max-width: 850px) {
-          padding: 0 0 0 15px;
           font-size: 20px;
         }
         @media (max-width: 550px) {
-          padding: 0 0 0 10px;
           height: 68vh;
           font-size: 15px;
         }
         @media (max-width: 450px) {
-          padding: 0 0 0 10px;
           font-size: 13px;
         }
 
