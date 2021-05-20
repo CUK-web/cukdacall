@@ -1,24 +1,28 @@
 .navContainer {
   top: 0;
-  background-color: rgb(255, 255, 255);
   border-bottom: 1px black;
 
   .navLogoBox {
-    background-color: rgb(23 22 195 / 90%);
+    // background-color: rgb(23 22 195 / 90%);
+    background-image: url('./img3.jpg');
+    background-size: cover;
     position: relative;
     text-align: center;
-    padding: 17px 0px 0px 0px;
+    .test {
+      background-color: rgba(5, 3, 116, 0.39);
+      padding: 20px 0px 0px 0px;
+      .navLogoImg {
+        width: 500px;
 
-    .navLogoImg {
-      width: 500px;
-      @media (max-width: 850px) {
-        width: 375px;
-      }
-      @media (max-width: 550px) {
-        width: 250px;
-      }
-      @media (max-width: 380px) {
-        width: 200px;
+        @media (max-width: 850px) {
+          width: 375px;
+        }
+        @media (max-width: 550px) {
+          width: 250px;
+        }
+        @media (max-width: 380px) {
+          width: 200px;
+        }
       }
     }
   }
@@ -70,7 +74,7 @@
     font-weight: bolder;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
   }
-  a {
+  a:hover {
     text-decoration: none;
   }
 }
