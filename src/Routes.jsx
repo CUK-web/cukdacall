@@ -11,19 +11,21 @@ import OutSchool from './pages/outschool/OutSchool';
 class Routes extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/nav" component={Nav} />
-          <Route exact path="/footer" component={Footer} />
-          <Route exact path="/insideschool" component={InSchool} />
-          <Route exact path="/footer" component={Footer} />
-          <Route exact path="/outsideschool" component={OutSchool} />
-          <Route exact path="/academiccalender" component={AcademCal} />
-          <Route exact path="/classevaluation" component={ClassEval} />
-        </Switch>
-        <Footer />
-      </Router>
+      <>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Main} />
+            <div>
+              <Nav />
+              <Route exact path="/insideschool" component={InSchool} />
+              <Route exact path="/outsideschool" component={OutSchool} />
+              <Route exact path="/academiccalender" component={AcademCal} />
+              <Route exact path="/classevaluation" component={ClassEval} />
+            </div>
+          </Switch>
+          <Footer />
+        </Router>
+      </>
     );
   }
 }

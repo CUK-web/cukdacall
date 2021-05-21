@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../../components/nav/Nav';
 import './ClassEval.scss';
 import SubjInfo from '../../components/classeval/SubjInfo';
 import { Button } from 'react-bootstrap';
@@ -298,7 +297,6 @@ class ClassEval extends Component {
   render() {
     return (
       <div className="totalContainer">
-        <Nav />
         <div className="evalContainer">
           <div className="evalListTab">
             <div className="btnContainer">
