@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from '../../components/nav/Nav';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
@@ -327,7 +326,6 @@ class AcademCal extends Component {
   render() {
     return (
       <>
-        <Nav />
         <div className="calContainer">
           <Calendar
             localizer={this.localizer}
