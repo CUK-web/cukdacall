@@ -68,9 +68,15 @@
       font-size: 13px;
     }
   }
+  .selected {
+    color: blue;
+  }
+  .unselected {
+    color: black;
+  }
   li:hover {
     text-decoration: none;
-    color: #3736ff;
+    // color: #3736ff;
     font-weight: bolder;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
   }

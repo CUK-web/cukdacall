@@ -30,7 +30,12 @@ class Main extends Component {
         link: '/classevaluation',
       },
     ],
+    // select: 1,
   };
+  // clickHandler = idx => {
+  //   this.setState({ select: idx });
+  // };
+
   render() {
     return (
       <div className="mainContainer">
