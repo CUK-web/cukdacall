@@ -17,10 +17,11 @@
       padding: 0px 60px 5px 60px;
       @media (max-width: 650px) {
         font-size: 45px;
-        padding: 0px 60px 0px 60px;
+        padding: 0px 47.5px 0px 47.5px;
       }
       @media (max-width: 450px) {
         font-size: 30px;
+        padding: 0px 35px 0px 35px;
       }
     }
   }
@@ -134,7 +135,7 @@
   .highlight {
     background: rgba(59, 59, 236, 0.7);
     color: white;
-    padding: 3px 4px;
+    padding: 3px 3px;
   }
 }
 .background {

@@ -1,5 +1,4 @@
 .calContainer {
-  // box-sizing: content-box;
   display: flex;
   justify-content: center;
   .rbc-calendar {
@@ -19,7 +18,7 @@
     @media (max-width: 450px) {
       font-size: 11px;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 350px) {
       font-size: 10px;
     }
 
@@ -32,7 +31,7 @@
       }
       @media (max-width: 450px) {
       }
-      @media (max-width: 324px) {
+      @media (max-width: 350px) {
         font-size: 10px;
       }
       .rbc-btn-group {
@@ -43,6 +42,24 @@
           @media (max-width: 650px) {
             padding: 2px 5px 2px 5px;
           }
+        }
+      }
+      .rbc-toolbar-label {
+        font-size: 22px;
+        flex-grow: 0.9;
+        @media (max-width: 950px) {
+          font-size: 20px;
+        }
+        @media (max-width: 650px) {
+          font-size: 18px;
+        }
+        @media (max-width: 450px) {
+          font-size: 16px;
+          padding: 0 6px;
+        }
+        @media (max-width: 350px) {
+          font-size: 14px;
+          padding: 0 4px;
         }
       }
     }

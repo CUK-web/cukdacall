@@ -16,7 +16,6 @@ export default class Footer extends Component {
           </p>
         </div>
         <div className="toCuk">
-          {/* <img src="/images/school.png" alt="img" className="teamImg" /> */}
           <a href="https://www.catholic.ac.kr/index.do">
             <img src="/images/school.png" alt="img" className="logoImg" />
           </a>

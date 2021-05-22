@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import '../../outschool/OutSchool.scss';
 
 export default class PlacePhoto extends Component {
   render() {

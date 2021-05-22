@@ -35,7 +35,6 @@ export default class Cafe extends Component {
   render() {
     return (
       <>
-        <header className="description"></header>
         <section className="outSchoolContents">
           {this.state.data.map((menu, idx) => {
             return <PlacePhoto key={idx} info={menu} />;
