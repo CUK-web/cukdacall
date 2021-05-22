@@ -26,6 +26,7 @@
     display: inline-block;
     cursor: pointer;
     padding: 0 4% 0 0%;
+    font-weight: bold;
   }
   .selected {
     color: rgb(223, 24, 17);
@@ -44,36 +45,10 @@
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(4, 4, 156, 0.562);
-
-    .description {
-      max-height: 200px;
-      overflow: auto;
-      font-size: 25px;
-      padding: 20px;
-      border-bottom: 1px solid rgba(4, 4, 156, 0.562);
-      @media (max-width: 950px) {
-        max-height: 150px;
-        font-size: 20px;
-        padding: 15px;
-      }
-      @media (max-width: 650px) {
-        font-size: 15px;
-        max-height: 100px;
-        padding: 10px;
-      }
-    }
     .outSchoolContents {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-      margin-top: 40px;
-      @media (max-width: 950px) {
-        margin-top: 20px;
-      }
-      @media (max-width: 650px) {
-        margin-top: 10px;
-      }
-
       .contentsTabs {
         display: flex;
         flex-direction: column;

@@ -50,12 +50,7 @@ export default class Etc extends Component {
   render() {
     return (
       <>
-        <header className="description">
-          <div className="innerText">
-            다큐카피(복사실), 다이소, 그린팜마트, 알파문구 등 기타 물품을 구할
-            수 있는 장소들이 있습니다
-          </div>
-        </header>
+        <header className="description"></header>
         <section className="outSchoolContents">
           {this.state.data.map((menu, idx) => {
             return <PlacePhoto key={idx} info={menu} />;
