@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Main.scss';
-import PageCards from './components/PageCards';
+import PageCards from '../../components/main/PageCards';
 
 class Main extends Component {
   state = {

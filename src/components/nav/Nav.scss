@@ -3,7 +3,6 @@
   border-bottom: 1px black;
 
   .navLogoBox {
-    // background-color: rgb(23 22 195 / 90%);
     background-image: url('./img3.jpg');
     background-size: cover;
     position: relative;
@@ -69,14 +68,14 @@
     }
   }
   .selected {
-    color: blue;
+    color: #3736ff;
   }
   .unselected {
     color: black;
   }
   li:hover {
     text-decoration: none;
-    // color: #3736ff;
+    color: #3736ff;
     font-weight: bolder;
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
   }
