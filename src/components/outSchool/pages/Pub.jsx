@@ -35,12 +35,7 @@ export default class Pub extends Component {
   render() {
     return (
       <>
-        <header className="description">
-          <div className="innerText">
-            가톨릭대학교 근처 술집으로는 오사카 부루스, 시나브로, 삼일포차,
-            서울포차, 비어킹, 크라운호프, 육회지존, 이자카야 감이 있습니다.
-          </div>
-        </header>
+        <header className="description"></header>
         <section className="outSchoolContents">
           {this.state.data.map((menu, idx) => {
             return <PlacePhoto key={idx} info={menu} />;

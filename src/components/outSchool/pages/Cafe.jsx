@@ -35,13 +35,7 @@ export default class Cafe extends Component {
   render() {
     return (
       <>
-        <header className="description">
-          <div className="innerText">
-            가톨릭대학교 근처 카페로는 학교 앞에 있는 오르다, 다방구, 오르고,
-            New Day, 밀다, 상상테라스, 할리스 등 휴식 혹은 공부를 위한 공간이
-            다양하게 마련되어 있습니다.
-          </div>
-        </header>
+        <header className="description"></header>
         <section className="outSchoolContents">
           {this.state.data.map((menu, idx) => {
             return <PlacePhoto key={idx} info={menu} />;

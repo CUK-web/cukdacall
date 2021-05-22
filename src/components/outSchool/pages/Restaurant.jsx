@@ -87,17 +87,7 @@ export default class Restaurant extends Component {
   render() {
     return (
       <>
-        <header className="description">
-          <div className="innerText">
-            학교 근처에 있는 밥집으로는 지지고, 꼬밥(컵밥), 메밀꽃, 삼복(돈가스,
-            냉면) 등이 있습니다. 학교 정문을 지나 골목 쪽으로 향하면 신동
-            Lab(덮밥집), 크라이치즈버거, 엄마 손 칼국시(칼국수), 학교 가는
-            길(떡볶이집), 피자 펍 1983이 있습니다. 역 쪽으로 향하게 되면 삼겹의
-            난(삼겹살), 등촌 칼국수, 니뽕내뽕(퓨전 짬뽕)이 있습니다. 그 외에도
-            다양한 한식, 일식, 중식 등 다양한 메뉴들을 골라서 먹을 수 있는
-            밥집들이 많이 있습니다.
-          </div>
-        </header>
+        <header className="description"></header>
         <section className="outSchoolContents">
           {this.state.data.map((menu, idx) => {
             return <PlacePhoto key={idx} info={menu} />;
