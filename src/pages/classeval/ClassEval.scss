@@ -32,6 +32,9 @@
         }
 
         .btn {
+          background-color: rgba(55, 54, 255, 0.5);
+          border-color: rgba(55, 54, 255, 0.7);
+          color: ivory;
           font-size: 15px;
           margin-bottom: 10px;
           margin-right: 10px;
@@ -60,6 +63,15 @@
         .btn:hover {
           height: auto;
           white-space: normal;
+        }
+        .selected {
+          height: auto;
+          white-space: normal;
+          background-color: rgba(55, 54, 255, 0.8);
+          border: solid rgba(55, 54, 255, 1);
+        }
+        .unselected:hover {
+          background-color: rgba(55, 54, 255, 0.7);
         }
       }
       .btnContainer::-webkit-scrollbar {
