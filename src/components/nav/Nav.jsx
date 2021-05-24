@@ -10,11 +10,10 @@ export default class Nav extends Component {
       { title: '학교일정', link: '/academiccalender' },
       { title: '강의평가', link: '/classevaluation' },
     ],
-    // select: 1,
   };
-  clickHandler = idx => {
+  clickHandler = () => {
     window.scrollTo({ left: 0, top: 0 });
-    this.setState({ select: idx });
+    this.setState({});
   };
   render() {
     return (
@@ -33,11 +32,13 @@ export default class Nav extends Component {
                 <Link
                   to={menu.link}
                   key={idx}
-                  onClick={() => this.clickHandler(idx + 1)}
+                  onClick={() => this.clickHandler()}
                 >
                   <li
                     className={
-                      idx + 1 === this.state.select ? 'selected' : 'unselected'
+                      window.location.pathname === menu.link
+                        ? 'selected'
+                        : 'unselected'
                     }
                   >
                     {menu.title}
