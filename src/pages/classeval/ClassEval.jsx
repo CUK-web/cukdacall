@@ -23,6 +23,12 @@ class ClassEval extends Component {
                   <Button
                     variant="primary"
                     onClick={() => this.clickHandler(subject.id)}
+                    className={
+                      this.state.currentId === subject.id
+                        ? 'selected'
+                        : 'unselected'
+                    }
+                    active={this.state.currentId === subject.id ? true : false}
                   >
                     {subject.name} <br />({subject.prof})
                   </Button>
