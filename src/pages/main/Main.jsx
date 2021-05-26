@@ -7,19 +7,19 @@ class Main extends Component {
     cardElements: [
       {
         id: 1,
-        title: '학교내부',
+        title: '学校内部',
         img: '/images/inschoolicon.svg',
         link: '/insideschool',
       },
       {
         id: 2,
-        title: '학교외부',
+        title: '学校外部',
         img: '/images/outschoolicon.svg',
         link: '/outsideschool',
       },
       {
         id: 3,
-        title: '학사일정',
+        title: '学校日程',
         img: '/images/calendaricon.svg',
         link: '/academiccalender',
       },
@@ -37,43 +37,31 @@ class Main extends Component {
       <>
         <div className="mainContainer">
           <div className="title">
-            <span className="titleText">CUKDACALL</span>
+            <img alt="Logo" src="/images/그림3.png" className="titleText" />
           </div>
           <div>
             <div className="cardContainer">
               <PageCards cardElements={this.state.cardElements} />
             </div>
             <div className="teamIntro">
-              ‘중국 투자와 통상 캡스톤 디자인’ 과목을 수강하는 학생들이 모인 팀{' '}
-              <span className="highlight">CUK共 打(da) call</span>입니다. <br />
+              CUK共 打(da)
+              call是"中国投资和通商Capstone设计"课程的学生聚集的团队。
               <br />
-              우리는 학교에 있는 중국 유학생들과 인터뷰 하는 과정에서 <br />
-              <span className="highlight">
-                COVID-19로 인해 중국 유학생들이 학교 생활에서 고립감을 느끼는
-                문제
-              </span>
-              를 알게 되었습니다. <br />
-              모든 것이 생소한 타국 생활에 언어도 통하지 않는 여러 어려움을 겪고
-              있는 중국 유학생들의 고충은 <br /> 함께 학교생활을 하는 입장에서
-              꼭 해결하고 싶은 문제 였습니다.
+              我们在采访中国留学生的过程中发现，COVID-19导致中国留学生在学校生活中感到孤独。
+              <br />
+              在异国他乡的生活中，经历着语言不通的种种困难的中国留学生的苦衷，从一起上学的立场来看，是一定要解决的问题。
               <br />
               <br />
-              CUK共 打(da) call은{' '}
-              <span className="highlight">
-                중국 유학생들의 학교 적응을 원활히 돕기 위해
-                <br />
-                ‘가톨릭대 가이드북’을 만들었습니다.
-              </span>
-              <br /> <br /> 이 사이트의 이용자는 학교 내부의 건물의 이름과 위치
-              등을 한눈에 확인할 수 있습니다. <br /> 학교 주변의 식당과 카페
-              정보와 수업에 필요한 물품을 구매하는 위치를 확인할 수 있습니다.
+              CUK共 打(da)
+              call为了帮助中国留学生顺利适应学校生活，制定了可以自行修改的《天主教大学指南》。
               <br />
-              뿐만 아니라, 자체적인 수업 평가 기능을 통해 수업을 듣기 전 자신이
-              들을 수업의 정보를 미리 확인할 수 있습니다. <br />
+              该网站的用户可一眼确认学校内部建筑的名称和位置，并可确认学校周边有哪些餐厅和咖啡厅，授课所需物品等。
               <br />
-              중국 친구들의 성공적인 유학생활을{' '}
-              <span className="highlight">CUK共 打(da)call</span>이
-              응원하겠습니다!
+              不仅如此，通过学校授课信息和作业与否等自身授课评价功能，在听课前可以提前确认自己听课的信息。
+              <br />
+              <br />
+              CUK共 打（da）call 给中国朋友成功的留学生活 应援！
+              {/* <span className="highlight"> */}
             </div>
           </div>
           <div className="background"></div>

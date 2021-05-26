@@ -7,12 +7,12 @@ export default class Cafe extends Component {
       {
         title: '오르다',
         imgData: 'orda.png',
-        info: '와플, 오레오 마카롱, 아메리카노',
+        info: '华夫饼，奥利奥，马卡龙，美式咖啡',
       },
       {
         title: '넘버원',
         imgData: 'numberone.png',
-        info: '딸기 라떼, 조리퐁 라떼',
+        info: '草莓拿铁，香草拿铁',
       },
       {
         title: '분더 커피',
@@ -22,7 +22,7 @@ export default class Cafe extends Component {
       {
         title: '네트 커피',
         imgData: 'netcoffee.png',
-        info: '아메리카노, 아인슈페너',
+        info: '美式咖啡, 아인슈페너',
       },
       {
         title: '상상테라스',

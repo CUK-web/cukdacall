@@ -5,9 +5,9 @@ import './Nav.scss';
 export default class Nav extends Component {
   state = {
     data: [
-      { title: '학교내부', link: '/insideschool' },
-      { title: '학교외부', link: '/outsideschool' },
-      { title: '학교일정', link: '/academiccalender' },
+      { title: '学校内部', link: '/insideschool' },
+      { title: '学校外部', link: '/outsideschool' },
+      { title: '学校日程', link: '/academiccalender' },
       { title: '강의평가', link: '/classevaluation' },
     ],
   };
@@ -21,7 +21,7 @@ export default class Nav extends Component {
         <div className="navLogoBox">
           <div className="test">
             <Link to="/">
-              <img alt="Logo" src="/images/그림1.png" className="navLogoImg" />
+              <img alt="Logo" src="/images/그림3.png" className="navLogoImg" />
             </Link>
           </div>
         </div>

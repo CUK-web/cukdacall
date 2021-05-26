@@ -5,22 +5,26 @@
   .navLogoBox {
     background-image: url('./img3.jpg');
     background-size: cover;
-    position: relative;
+    background-position: left;
     text-align: center;
     .test {
       background-color: rgba(5, 3, 116, 0.39);
-      padding: 10px 0px 0px 0px;
+
       .navLogoImg {
         width: 500px;
+        padding: 50px 0px;
 
         @media (max-width: 950px) {
           width: 375px;
+          padding: 40px 0px;
         }
         @media (max-width: 650px) {
           width: 250px;
+          padding: 30px 0px;
         }
         @media (max-width: 450px) {
           width: 200px;
+          padding: 20px 0px;
         }
       }
     }
