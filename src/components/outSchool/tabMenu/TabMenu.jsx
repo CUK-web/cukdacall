@@ -5,7 +5,7 @@ import Cafe from '../pages/Cafe';
 import Etc from '../pages/Etc';
 
 const components = { 1: <Restaurant />, 2: <Pub />, 3: <Cafe />, 4: <Etc /> };
-const categories = ['卖店', '술집', '咖啡厅', '教材/书籍'];
+const categories = ['卖店', '酒吧', '咖啡厅', '教材/书籍'];
 
 export default class TabMenu extends Component {
   state = {

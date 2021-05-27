@@ -8,7 +8,7 @@ export default class Nav extends Component {
       { title: '学校内部', link: '/insideschool' },
       { title: '学校外部', link: '/outsideschool' },
       { title: '学校日程', link: '/academiccalender' },
-      { title: '강의평가', link: '/classevaluation' },
+      { title: '讲义评价', link: '/classevaluation' },
     ],
   };
   clickHandler = () => {
