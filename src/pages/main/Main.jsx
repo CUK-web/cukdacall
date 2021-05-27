@@ -25,7 +25,7 @@ class Main extends Component {
       },
       {
         id: 4,
-        title: '강의평가',
+        title: '讲义评价',
         img: '/images/classevalicon.svg',
         link: '/classevaluation',
       },
@@ -47,13 +47,18 @@ class Main extends Component {
               CUK共 打(da)
               call是"中国投资和通商Capstone设计"课程的学生聚集的团队。
               <br />
-              我们在采访中国留学生的过程中发现，COVID-19导致中国留学生在学校生活中感到孤独。
+              我们在采访中国留学生的过程中发现，
+              <span className="highlight">
+                COVID-19导致中国留学生在学校生活中感到孤独。
+              </span>
               <br />
               在异国他乡的生活中，经历着语言不通的种种困难的中国留学生的苦衷，从一起上学的立场来看，是一定要解决的问题。
               <br />
               <br />
-              CUK共 打(da)
-              call为了帮助中国留学生顺利适应学校生活，制定了可以自行修改的《天主教大学指南》。
+              CUK共 打(da) call
+              <span className="highlight">
+                为了帮助中国留学生顺利适应学校生活，制定了可以自行修改的《天主教大学指南》。
+              </span>
               <br />
               该网站的用户可一眼确认学校内部建筑的名称和位置，并可确认学校周边有哪些餐厅和咖啡厅，授课所需物品等。
               <br />
@@ -61,7 +66,6 @@ class Main extends Component {
               <br />
               <br />
               CUK共 打（da）call 给中国朋友成功的留学生活 应援！
-              {/* <span className="highlight"> */}
             </div>
           </div>
           <div className="background"></div>
