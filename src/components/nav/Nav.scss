@@ -88,6 +88,9 @@
   .unselected {
     color: black;
   }
+  .unselected:hover {
+    color: rgba(55, 54, 255, 0.7);
+  }
   li:hover {
     text-decoration: none;
     color: #3736ff;

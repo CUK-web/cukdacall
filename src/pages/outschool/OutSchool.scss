@@ -41,6 +41,9 @@
   .unselected {
     color: rgb(0, 0, 0);
   }
+  .unselected:hover {
+    color: rgba(223, 24, 17, 0.5);
+  }
   .outSchoolContainer {
     display: flex;
     flex-direction: column;

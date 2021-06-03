@@ -69,7 +69,9 @@
     margin: 3px 0px 2px 0px;
   }
 }
-
+.toCuk:hover {
+  opacity: 0.5;
+}
 .socials {
   img {
     height: 40px;
@@ -87,5 +89,8 @@
     @media (max-width: 350px) {
       height: 20px;
     }
+  }
+  img:hover {
+    opacity: 0.5;
   }
 }
