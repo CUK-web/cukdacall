@@ -2,7 +2,7 @@
 
 .evalContainer {
   .formTitle {
-    padding: 30px 80px 70px;
+    padding: 30px 80px 46px;
     display: flex;
     justify-content: flex-end;
 
@@ -11,6 +11,7 @@
       background-color: rgb(#3736ff, 0.3);
       display: inline;
       padding: 5px 16px;
+      border: 1px solid white;
       border-radius: 20px;
       font-weight: bold;
       font-size: 24px;
@@ -21,13 +22,27 @@
     a:hover {
       color: rgb(#3736ff, 0.3);
       background: white;
+      border: 1px solid rgb(#3736ff, 0.3);
     }
-
+    @media (max-width: 950px) {
+      padding: 14px 0 30px;
+      justify-content: center;
+      a {
+        font-size: 21x;
+      }
+    }
     @media (max-width: 650px) {
       padding: 10px 0 30px;
       justify-content: center;
       a {
         font-size: 18px;
+      }
+    }
+    @media (max-width: 450px) {
+      padding: 10px 0 20px;
+      justify-content: center;
+      a {
+        font-size: 15px;
       }
     }
   }
