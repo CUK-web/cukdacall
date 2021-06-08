@@ -1,24 +1,24 @@
-# cukdacall
+# cukdacall Project
 
----
+<br>
 
 ## 프로젝트 기간
 
+2021.04.19 ~ 2021.05.14
 
 <br>
 
 ## 프로젝트 팀원
 
-김연주, 문재석
+- 김연주(Frontend), 문재석(Frontend)
 
 <br>
-
 
 
 ## 프로젝트 기술스택
 
 
-Html, Css, React, Sass
+- HTML/CSS(scss), JS, React.js(react-router, CRA, big calendar ) BootStrap
 
 <br>
 
@@ -42,9 +42,32 @@ CUK共 打(da) call은 중국 유학생들의 학교 적응을 원활히 돕기 
 
 <ol>
   <li>메인</li>
+  
+  - 클릭시 상세페이지로 넘어가는 card를 component 재사용
+  
+  <br>
+  
+  
   <li>학교 내부</li>
+  
+  - 내부 UI구현 및 학교 내부 이미지 작성
+  
+  <br>
+  
   <li>학교 외부</li>
+  
+  - 학교 외부 시설 소개를 component 재사용으로 식당, 카페, 주변 시설 소개 페이지 구현
+  - 상점의 상호명, 정보, 이용시간을 map함수를 적용하여 component 재사용 구현
+  -  Tap 클릭 시 색상이 바뀌는 버튼 구현
+  
+  <br>
+  
   <li>학사 일정</li>
+  
+  - big calendar 라이브러리를 적용하여 학사일정 구현
+  
+  <br>
+  
   <li>강의평가</li>
 </ol>
 
@@ -52,31 +75,34 @@ CUK共 打(da) call은 중국 유학생들의 학교 적응을 원활히 돕기 
 <br>
 
 ## 메인
+<img src="https://user-images.githubusercontent.com/68775082/121039910-74293900-c7ec-11eb-9ae5-c196c8d900dc.PNG" width="500">
 
-<사진첨부예정>
 
+<br>
 
 ## 학교 내부
 
-<사진첨부예정>
+<img src="https://user-images.githubusercontent.com/68775082/121039920-768b9300-c7ec-11eb-9463-c8608ba40919.PNG" width="500">
 
 <br>
 
 ## 학교 외부 
 
-<사진첨부예정>
+<img src="https://user-images.githubusercontent.com/68775082/121039974-80ad9180-c7ec-11eb-97c1-7aa330cf6a9d.PNG" width="500">
+
 
 <br>
 
 ## 학사 일정
+ 
 
-달력 라이브러리 사용 
+<img src="https://user-images.githubusercontent.com/68775082/121039996-873c0900-c7ec-11eb-8653-f848e228b84d.PNG" width="500">
 
-<사진첨부예정>
 
 <br>
 
 ## 강의평가 
 
-<사진첨부예정>
+<img src="https://user-images.githubusercontent.com/68775082/121040021-8b682680-c7ec-11eb-94de-bbf84d78c5fd.PNG" width="500">
+
 
